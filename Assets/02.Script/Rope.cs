@@ -50,11 +50,11 @@ public class Rope : MonoBehaviour
 
     void Update()
     {
-        if (Player.GetComponent<Move>().isWallWalk)
+        if (Player.GetComponent<PlayerState>().isWallWalk)
             return;
         
         Vector3 ropeStartPoint = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        if (!Player.GetComponent<Move>().isWallWalk)
+        if (!Player.GetComponent<PlayerState>().isWallWalk)
         {
             float wallx = 1;
             RaycastHit2D hitPlayerLookAt = Physics2D.Raycast(Player.transform.position, Vector2.right, 0.2f, LayerMask.GetMask("Ground", "Wall"));
@@ -69,7 +69,7 @@ public class Rope : MonoBehaviour
             if (hitPlayerLookAt.collider != null)
             {
                 Debug.Log(wallx);
-                Player.GetComponent<Move>().StartWallWalk(wallx);
+                Player.GetComponent<PlayerState>().StartWallWalk(wallx);
                 if (lineRenderer.positionCount > 0)
                     DeletRope();
 
@@ -116,7 +116,7 @@ public class Rope : MonoBehaviour
                 impulseSource.GenerateImpulse(0.5f);
                 //현재 위치 확인(속도)
                 oldPosition = Player.transform.position;
-                Player.GetComponent<Move>().Rope = true;
+                Player.GetComponent<PlayerState>().Rope = true;
                 circleR = Vector2.Distance(Player.transform.position, hit.point);
                 //180도로만 하니 벽뚫이 생김=>양쪽으로 +-45를 하여 체크
                 RaycastHit2D[] hit2D;
@@ -132,7 +132,7 @@ public class Rope : MonoBehaviour
                             //Debug.Log("Coollllllll name : " + hit2D[i].transform.name);
 
                             //반지름 줄이기
-                            if(Player.GetComponent<Move>().isGround)
+                            if(Player.GetComponent<PlayerState>().isGround)
                             {
                                 if(hit2D.Length>=2)
                                 {
@@ -444,7 +444,7 @@ public class Rope : MonoBehaviour
         lineRenderer.positionCount = 0;
         ropeSegments.Clear();
         Player.GetComponent<Rigidbody2D>().gravityScale = 5;
-        Player.GetComponent<Move>().Rope = false;
+        Player.GetComponent<PlayerState>().Rope = false;
     }
     private void GetPlayerVelocity()
     {

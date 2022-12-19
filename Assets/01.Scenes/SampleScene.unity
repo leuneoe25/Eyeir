@@ -135,6 +135,8 @@ GameObject:
   - component: {fileID: 73818523}
   - component: {fileID: 73818522}
   - component: {fileID: 73818521}
+  - component: {fileID: 73818528}
+  - component: {fileID: 73818527}
   - component: {fileID: 73818526}
   - component: {fileID: 73818525}
   m_Layer: 0
@@ -283,7 +285,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73818520}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d3d11fbbd5ff9e47bd6314341fbd752, type: 3}
   m_Name: 
@@ -295,6 +297,43 @@ MonoBehaviour:
   isGround: 0
   isWallWalk: 0
   WallXPos: 0
+--- !u!114 &73818527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73818520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc401db90b858d4cb5c29540ab070fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 11400000, guid: 9e7fd1c5c158240429a2deb4deb34a41, type: 2}
+  - {fileID: 11400000, guid: 579fb13b83d5340498f32f4679618b75, type: 2}
+  - {fileID: 11400000, guid: fa33a9e1884546a4e9fe19242bcce5ef, type: 2}
+  state: {fileID: 73818528}
+  rigidbody: {fileID: 73818521}
+  Player: {fileID: 73818520}
+--- !u!114 &73818528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73818520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1705baa89d2af5848a9087c81e60782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 10
+  JumpPower: 20
+  isWallWalk: 0
+  Rope: 0
+  isGround: 0
+  WallWalkPosX: 0
 --- !u!1 &303412143
 GameObject:
   m_ObjectHideFlags: 0
