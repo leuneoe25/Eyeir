@@ -13,6 +13,9 @@ public class PlayerState : MonoBehaviour
     public bool isJumping = false;
 
     public int PlayerHp = 3;
+    public int nowSkill = -1;
+
+    public SkillCommand command;
     void Start()
     {
         
@@ -27,6 +30,7 @@ public class PlayerState : MonoBehaviour
     {
         PlayerHp--;
     }
+    
     public void StartWallWalk(float PosX)
     {
         isWallWalk = true;
