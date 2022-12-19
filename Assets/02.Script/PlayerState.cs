@@ -11,6 +11,8 @@ public class PlayerState : MonoBehaviour
     public bool isGround = false;
     public float WallWalkPosX = 0f;
     public bool isJumping = false;
+
+    public int PlayerHp = 3;
     void Start()
     {
         
@@ -20,6 +22,10 @@ public class PlayerState : MonoBehaviour
     void Update()
     {
         
+    }
+    public void Damaged()
+    {
+        PlayerHp--;
     }
     public void StartWallWalk(float PosX)
     {
