@@ -1,23 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Audio;
-using UnityEngine.UI;
+
 public class Sound : MonoBehaviour
 {
-    public AudioMixer masterMixer;
-    public Slider audioSlider;
+    public AudioSource musicsource;
 
-    public void AudioConTrol()
+    public void SetMusicVolume(float volume)
     {
-        float sound = audioSlider.value;
-
-        if (sound == -40f) masterMixer.SetFloat("Master", -80);
-        else masterMixer.SetFloat("Master", sound);
-    }
-
-    public void ToggleAudioVolume()
-    {
-        AudioListener.volume = AudioListener.volume == 0 ? 1 : 0;
+        musicsource.volume = volume;
     }
 }
