@@ -21,17 +21,20 @@ public class Skill_1 : Skill
 
     public override float GetCoolTime()
     {
-        throw new System.NotImplementedException();
+        return coolTime;
     }
 
     public override int GetSkillLevel()
     {
-        throw new System.NotImplementedException();
+        return level;
     }
 
-    public override int SkillLevelUp()
+    public override void SkillLevelUp()
     {
-        throw new System.NotImplementedException();
+        if(level == 1)
+        {
+            level++;
+        }
     }
 
     // Start is called before the first frame update

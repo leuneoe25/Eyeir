@@ -5835,7 +5835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 0
-  level: 0
+  level: 1
 --- !u!114 &996499295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5849,7 +5849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 0
-  level: 0
+  level: 1
 --- !u!114 &996499296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5863,7 +5863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 0
-  level: 0
+  level: 1
 --- !u!114 &996499297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7311,7 +7311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d08b14021a76dd4c8bfb3f5832867a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gas: 0
+  gas: 100
   Usage: 5
 --- !u!1 &2055818014
 GameObject:

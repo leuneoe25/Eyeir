@@ -6,7 +6,7 @@ public abstract class Skill : MonoBehaviour
 {
    
     public abstract void ExcutSkill();
-    public abstract int SkillLevelUp();
+    public abstract void SkillLevelUp();
     public abstract int GetSkillLevel();
     public abstract float GetCoolTime();
 
