@@ -39,7 +39,7 @@ public class BehaviorList : MonoBehaviour
         else
         {
             if (NowBehavior != null)
-                Debug.Log(NowBehavior.ToString());
+                //Debug.Log(NowBehavior.ToString());
             if (!NowBehavior.OnUapdate(state, rigidbody, Player))
             {
                 NowBehavior = null;

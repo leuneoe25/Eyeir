@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 73818525}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -337,6 +337,7 @@ MonoBehaviour:
   isGround: 0
   WallWalkPosX: -1
   isJumping: 0
+  PlayerHp: 3
 --- !u!1 &89173812
 GameObject:
   m_ObjectHideFlags: 0
@@ -7056,6 +7057,7 @@ GameObject:
   - component: {fileID: 1803185927}
   - component: {fileID: 1803185926}
   - component: {fileID: 1803185925}
+  - component: {fileID: 1803185928}
   m_Layer: 0
   m_Name: Rope
   m_TagString: Untagged
@@ -7077,6 +7079,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 519420031}
   Player: {fileID: 73818520}
+  gas: {fileID: 1803185928}
   impulseSource: {fileID: 877053065}
   circleR: 0
   deg: 180
@@ -7193,6 +7196,20 @@ Transform:
   m_Father: {fileID: 73818524}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1803185928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803185924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d08b14021a76dd4c8bfb3f5832867a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gas: 0
+  Usage: 5
 --- !u!1 &2055818014
 GameObject:
   m_ObjectHideFlags: 0

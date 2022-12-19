@@ -114,7 +114,13 @@ public class BehaviorWallWalk : BehaviorNode
     //}
     public void StopWallWalk(PlayerState ps, Rigidbody2D rigidbody, GameObject Character)
     {
-        rigidbody.AddForce(new Vector2(Character.transform.localScale.x+2,1) * (ps.JumpPower/2 ), ForceMode2D.Impulse);
+        if(Character.transform.localScale.x > 0)
+            rigidbody.AddForce(new Vector2(Character.transform.localScale.x+2,1) * (ps.JumpPower ), ForceMode2D.Impulse);
+        else
+        {
+            rigidbody.AddForce(new Vector2(Character.transform.localScale.x - 2, 1) * (ps.JumpPower), ForceMode2D.Impulse);
+
+        }
         rigidbody.gravityScale = 5;
         ps.isWallWalk = false;
     }
