@@ -11,15 +11,25 @@ public class BehaviorWallWalk : BehaviorNode
         //    return false;
         //닿아 있나
 
-
-        Debug.Log(ps.Rope);
-        if (ps.Rope)
-            return false;
+        //if (ps.Rope)
+        //    return false;
         
         
         if (!ps.isWallWalk)
             return false;
 
+        //벽에 붙어 있는지 체크
+        RaycastHit2D UpHit = Physics2D.Raycast(new Vector2(Character.transform.position.x, Character.transform.position.y + 0.5f), new Vector2(-Character.transform.localScale.x, 0), 0.55f, LayerMask.GetMask("Ground", "Wall"));
+        RaycastHit2D DwonHit = Physics2D.Raycast(new Vector2(Character.transform.position.x, Character.transform.position.y - 0.5f), new Vector2(-Character.transform.localScale.x, 0), 0.55f, LayerMask.GetMask("Ground", "Wall"));
+        if (UpHit.collider == null && DwonHit.collider == null)
+        {
+            //Debug.Log(UpHit.transform.name + " " + DwonHit.transform.name);
+            ps.isWallWalk = false;
+            rigidbody.gravityScale = 5;
+            return false;
+
+        }
+        Character.transform.GetChild(1).GetComponent<Rope>().DeletRope();
         if (Input.GetKeyDown(KeyCode.Space))
         {
             
@@ -31,16 +41,41 @@ public class BehaviorWallWalk : BehaviorNode
         //rigidbody.gravityScale = 0;
         float y = Input.GetAxisRaw("Vertical");
         rigidbody.gravityScale = 0;
+        RaycastHit2D hit;
+
+        hit = Physics2D.Raycast(Character.transform.position, Vector2.down, 1.5f, LayerMask.GetMask("Ground"));
+        if (hit.collider != null)
+        {
+            ps.isGround = true;
+        }
+        else
+        {
+            ps.isGround = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ps.isJumping = true;
+        }
         RaycastHit2D[] hitEndWall;
         rigidbody.velocity = new Vector2(0, 0);
         if (y >= 1)
         {
-            hitEndWall = Physics2D.RaycastAll(new Vector2(Character.transform.position.x, Character.transform.position.y + 0.5f), new Vector2(ps.WallWalkPosX, 0), 5f, LayerMask.GetMask("Ground", "Wall"));
+            
+            hitEndWall = Physics2D.RaycastAll(new Vector2(Character.transform.position.x, Character.transform.position.y + 0.5f), new Vector2(-Character.transform.localScale.x, 0), 5f, LayerMask.GetMask("Ground", "Wall"));
+            RaycastHit2D hitup = Physics2D.Raycast(new Vector2(Character.transform.position.x, Character.transform.position.y + 0.5f), Vector2.up, 2f, LayerMask.GetMask("Ground", "Wall"));
+            if(hitup.collider != null)
+            {
+                rigidbody.AddForce(new Vector2(Character.transform.localScale.x * 2, -0.2f) * (ps.JumpPower), ForceMode2D.Impulse);
+                rigidbody.gravityScale = 5;
+                ps.isWallWalk = false;
+                return false;
+            }
             //Debug.DrawRay(new Vector2(transform.position.x, transform.position.y + 1.5f), new Vector2(WallWalkPosX, 0) * 5, Color.black);
-            if (hitEndWall.Length == 0)
+            if (hitEndWall.Length == 0  )
             {
                 //대각선
-                //Debug.Log(null);
+                Debug.Log(null);
 
                 StopWallWalk(ps, rigidbody, Character);
                 return false;
@@ -49,11 +84,18 @@ public class BehaviorWallWalk : BehaviorNode
         }
         else if (y <= -1)
         {
-            hitEndWall = Physics2D.RaycastAll(new Vector2(Character.transform.position.x, Character.transform.position.y - 0.5f), new Vector2(ps.WallWalkPosX, 0), 5f, LayerMask.GetMask("Ground", "Wall"));
-            //Debug.DrawRay(new Vector2(transform.position.x, transform.position.y - 0.5f), new Vector2(ps.WallWalkPosX, 0) * 5, Color.black);
+            hitEndWall = Physics2D.RaycastAll(new Vector2(Character.transform.position.x, Character.transform.position.y - 0.5f), new Vector2(-Character.transform.localScale.x, 0), 5f, LayerMask.GetMask("Ground", "Wall"));
+            Debug.DrawRay(new Vector2(Character.transform.position.x, Character.transform.position.y - 0.5f), new Vector2(-Character.transform.localScale.x, 0) * 5, Color.white);
+            if(ps.isGround)
+            {
+                rigidbody.gravityScale = 5;
+                ps.isWallWalk = false;
+                return false;
+            }
             if (hitEndWall.Length == 0)
             {
                 //대각선
+                //Debug.Log(Character.transform.localScale.x);
                 StopWallWalk(ps,rigidbody,Character);
                 return false;
             }
@@ -72,7 +114,7 @@ public class BehaviorWallWalk : BehaviorNode
     //}
     public void StopWallWalk(PlayerState ps, Rigidbody2D rigidbody, GameObject Character)
     {
-        rigidbody.AddForce(Vector2.up * (ps.JumpPower ), ForceMode2D.Impulse);
+        rigidbody.AddForce(new Vector2(Character.transform.localScale.x+2,1) * (ps.JumpPower/2 ), ForceMode2D.Impulse);
         rigidbody.gravityScale = 5;
         ps.isWallWalk = false;
     }

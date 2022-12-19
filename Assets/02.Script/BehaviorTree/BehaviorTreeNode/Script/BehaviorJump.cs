@@ -11,61 +11,48 @@ public class BehaviorJump : BehaviorNode
         //    return false;
         if (ps.isWallWalk)
             return false;
-
+        if (!ps.isJumping)
+            return false;
         //move
         float x = Input.GetAxisRaw("Horizontal");
         TransformX(x, Character);
 
         if (ps.Rope)
             return false;
-
-        if (!ps.isGround)
-        {
-
-            if (!ps.isWallWalk)
-            {
-                
-                RaycastHit2D UpHit = Physics2D.Raycast(new Vector2(Character.transform.position.x, Character.transform.position.y + 0.5f), new Vector2(ps.WallWalkPosX, 0), 0.8f, LayerMask.GetMask("Ground", "Wall"));
-                Debug.DrawRay(new Vector2(Character.transform.position.x, Character.transform.position.y + 0.5f), new Vector2(ps.WallWalkPosX, 0) * 0.6f, Color.blue, 2);
-                RaycastHit2D DwonHit = Physics2D.Raycast(new Vector2(Character.transform.position.x, Character.transform.position.y - 0.5f), new Vector2(ps.WallWalkPosX, 0), 0.8f, LayerMask.GetMask("Ground", "Wall"));
-                Debug.DrawRay(new Vector2(Character.transform.position.x, Character.transform.position.y - 0.5f), new Vector2(ps.WallWalkPosX, 0) * 0.6f, Color.blue, 2);
-                Debug.Log("C");
-                if (UpHit.collider != null && DwonHit.collider != null)
-                {
-                    Debug.Log(UpHit.transform.name + " " + DwonHit.transform.name);
-                    ps.isWallWalk = true;
-                    
-                }
-            }
-
-        }
-
-
-
         if (ps.isGround)
-            rigidbody.velocity = new Vector2(0, rigidbody.velocity.y);
-
-        rigidbody.velocity = new Vector2(x * ps.Speed, rigidbody.velocity.y);
-
-        //Jump
-        float JumpPower = 20;
-        RaycastHit2D hit;
-
-        hit = Physics2D.Raycast(Character.transform.position, Vector2.down, 1.5f, LayerMask.GetMask("Ground"));
-        if (hit.collider != null)
         {
-            ps.isGround = true;
+            rigidbody.AddForce(Vector2.up * ps.JumpPower, ForceMode2D.Impulse);
+            ps.isJumping = false;
+            return false;
         }
-        else
-        {
-            ps.isGround = false;
-        }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            rigidbody.AddForce(Vector2.up * JumpPower, ForceMode2D.Impulse);
-        }
+        
 
-        return true;
+
+
+        //if (ps.isGround)
+        //    rigidbody.velocity = new Vector2(0, rigidbody.velocity.y);
+
+        //rigidbody.velocity = new Vector2(x * ps.Speed, rigidbody.velocity.y);
+
+        ////Jump
+        //float JumpPower = 20;
+        //RaycastHit2D hit;
+
+        //hit = Physics2D.Raycast(Character.transform.position, Vector2.down, 1.5f, LayerMask.GetMask("Ground"));
+        //if (hit.collider != null)
+        //{
+        //    ps.isGround = true;
+        //}
+        //else
+        //{
+        //    ps.isGround = false;
+        //}
+        //if (Input.GetKeyDown(KeyCode.Space) && ps.isGround)
+        //{
+        //    rigidbody.AddForce(Vector2.up * JumpPower, ForceMode2D.Impulse);
+        //}
+
+        return false;
     }
     private void TransformX(float x, GameObject Character)
     {
