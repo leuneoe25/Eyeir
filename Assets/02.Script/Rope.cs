@@ -50,9 +50,33 @@ public class Rope : MonoBehaviour
 
     void Update()
     {
-        
+        if (Player.GetComponent<Move>().isWallWalk)
+            return;
         
         Vector3 ropeStartPoint = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        if (!Player.GetComponent<Move>().isWallWalk)
+        {
+            float wallx = 1;
+            RaycastHit2D hitPlayerLookAt = Physics2D.Raycast(Player.transform.position, Vector2.right, 0.2f, LayerMask.GetMask("Ground", "Wall"));
+            if (PMotion)
+                Debug.DrawRay(Player.transform.position, Vector2.right * 0.2f, Color.red);
+            if (!PMotion)
+            {
+                hitPlayerLookAt = Physics2D.Raycast(Player.transform.position, Vector2.left, 0.2f, LayerMask.GetMask("Ground", "Wall"));
+                Debug.DrawRay(Player.transform.position, Vector2.left * 0.2f, Color.red);
+                wallx = -1;
+            }
+            if (hitPlayerLookAt.collider != null)
+            {
+                Debug.Log(wallx);
+                Player.GetComponent<Move>().StartWallWalk(wallx);
+                if (lineRenderer.positionCount > 0)
+                    DeletRope();
+
+                return;
+            }
+            
+        }
         if (Input.GetMouseButtonDown(0))
         {
             isCutDown = false;
@@ -109,7 +133,16 @@ public class Rope : MonoBehaviour
 
                             //반지름 줄이기
                             if(Player.GetComponent<Move>().isGround)
+                            {
+                                if(hit2D.Length>=2)
+                                {
+                                    cutDown = GroundCircleRCutDown(Vector2.Distance(hit.point, hit2D[1].point) - 2f, hit2D[1].point);
+                                    return;
+                                }
                                 cutDown = GroundCircleRCutDown(Vector2.Distance(hit.point, hit2D[i].point) - 2f, hit2D[i].point);
+                                Debug.Log(hit2D.Length);
+                                return;
+                            }
                             else
                             {
                                 //+45
@@ -151,17 +184,8 @@ public class Rope : MonoBehaviour
             }
             if(!isCutDown)
             {
-                RaycastHit2D hitPlayerLookAt = Physics2D.Raycast(Player.transform.position, Vector2.right, 0.8f, LayerMask.GetMask("Ground", "Wall"));
-                if (transform.localScale.x > 0)
-                    hitPlayerLookAt = Physics2D.Raycast(Player.transform.position, Vector2.left, 0.8f, LayerMask.GetMask("Ground", "Wall"));
-                if (hitPlayerLookAt.collider != null)
-                {
-                    Player.GetComponent<Move>().StartWallWalk(Player.transform.localScale.x);
-                    if (lineRenderer.positionCount > 0)
-                        DeletRope();
-                    
-                    return;
-                }
+                
+                
 
 
                 Player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
@@ -446,13 +470,21 @@ public class Rope : MonoBehaviour
     {
         isCutDown = true;
         float Speed = 30;
+        float x = 0;
+        if (pos.x > Player.transform.position.x)
+            x = 1;
+        else
+        {
+            x = -1;
+        }
         yield return new WaitForSeconds(0.1f);
         while (Mathf.Abs(Player.transform.position.x - pos.x) > 0.5f)
         {
-            if(Mathf.Abs(Player.transform.position.x) > Mathf.Abs(pos.x))
-                Player.transform.position -= Vector3.right * Speed * Time.deltaTime;
-            else
-                Player.transform.position += Vector3.right * Speed * Time.deltaTime;
+            Player.transform.position += new Vector3(x,0,0) * Speed * Time.deltaTime;
+            //if(Mathf.Abs(Player.transform.position.x) > Mathf.Abs(pos.x))
+            //    Player.transform.position -= Vector3.right * Speed * Time.deltaTime;
+            //else
+            //    Player.transform.position += Vector3.right * Speed * Time.deltaTime;
             yield return new WaitForSeconds(0.01f);
         }
         cutDown = null;
@@ -468,7 +500,7 @@ public class Rope : MonoBehaviour
 
 
         //Debug.Log(v);
-        var rad = Mathf.Deg2Rad * (deg);
+        var rad = Mathf.Deg2Rad * (180);
         var x = r * Mathf.Sin(rad);
         var y = r * Mathf.Cos(rad);
         Vector3 v = hit.point + new Vector2(x, y);
