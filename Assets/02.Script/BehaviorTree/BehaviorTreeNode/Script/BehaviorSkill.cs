@@ -7,6 +7,6 @@ public class BehaviorSkill : BehaviorNode
 {
     public override bool OnUapdate(PlayerState ps, Rigidbody2D rigidbody, GameObject Character)
     {
-        throw new System.NotImplementedException();
+        return false;
     }
 }

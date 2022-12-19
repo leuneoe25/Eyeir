@@ -8,6 +8,7 @@ public class Rope : MonoBehaviour
     [Header("Camera")]
     [SerializeField] private Camera mainCamera;
     [SerializeField] private GameObject Player;
+    [SerializeField] private GasSystem gas;
     public CinemachineImpulseSource impulseSource;
 
     private LineRenderer lineRenderer;
@@ -280,7 +281,7 @@ public class Rope : MonoBehaviour
                 RaycastHit2D hitUP = Physics2D.Raycast(Player.transform.position, Vector2.up, 2, LayerMask.GetMask("Ground", "Wall"));
                 if (hitUP.collider == null)
                 {
-                    if (Input.GetKey(KeyCode.LeftShift))
+                    if (Input.GetKey(KeyCode.LeftShift) && gas.GetGas() > 0)
                     {
 
 
@@ -294,6 +295,7 @@ public class Rope : MonoBehaviour
                         {
                             deg += Time.deltaTime * 150;
                         }
+                        gas.UseGas();
                     }
                     else
                     {
@@ -420,7 +422,6 @@ public class Rope : MonoBehaviour
     }
     public void DeletRope()
     {
-        Debug.Log("Delet");
         //부스터 끝내기
         isBooster = false;
         Player.transform.GetChild(0).gameObject.SetActive(false);
