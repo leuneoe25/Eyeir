@@ -134,8 +134,14 @@ public class Rope : MonoBehaviour
                             //반지름 줄이기
                             if(Player.GetComponent<Move>().isGround)
                             {
+                                if(hit2D.Length>=2)
+                                {
+                                    cutDown = GroundCircleRCutDown(Vector2.Distance(hit.point, hit2D[1].point) - 2f, hit2D[1].point);
+                                    return;
+                                }
                                 cutDown = GroundCircleRCutDown(Vector2.Distance(hit.point, hit2D[i].point) - 2f, hit2D[i].point);
                                 Debug.Log(hit2D.Length);
+                                return;
                             }
                             else
                             {
@@ -464,13 +470,21 @@ public class Rope : MonoBehaviour
     {
         isCutDown = true;
         float Speed = 30;
+        float x = 0;
+        if (pos.x > Player.transform.position.x)
+            x = 1;
+        else
+        {
+            x = -1;
+        }
         yield return new WaitForSeconds(0.1f);
         while (Mathf.Abs(Player.transform.position.x - pos.x) > 0.5f)
         {
-            if(Mathf.Abs(Player.transform.position.x) > Mathf.Abs(pos.x))
-                Player.transform.position -= Vector3.right * Speed * Time.deltaTime;
-            else
-                Player.transform.position += Vector3.right * Speed * Time.deltaTime;
+            Player.transform.position += new Vector3(x,0,0) * Speed * Time.deltaTime;
+            //if(Mathf.Abs(Player.transform.position.x) > Mathf.Abs(pos.x))
+            //    Player.transform.position -= Vector3.right * Speed * Time.deltaTime;
+            //else
+            //    Player.transform.position += Vector3.right * Speed * Time.deltaTime;
             yield return new WaitForSeconds(0.01f);
         }
         cutDown = null;
