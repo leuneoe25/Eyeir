@@ -1,0 +1,3372 @@
+fileFormatVersion: 2
+guid: 2118afbf1f6c75f40aec58bec09f721e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Frozen_environment_props_0
+  - first:
+      213: 21300002
+    second: Frozen_environment_props_1
+  - first:
+      213: 21300004
+    second: Frozen_environment_props_2
+  - first:
+      213: 21300006
+    second: Frozen_environment_props_3
+  - first:
+      213: 21300008
+    second: Frozen_environment_props_4
+  - first:
+      213: 21300010
+    second: Frozen_environment_props_5
+  - first:
+      213: 21300012
+    second: Frozen_environment_props_6
+  - first:
+      213: 21300014
+    second: Frozen_environment_props_7
+  - first:
+      213: 21300016
+    second: Frozen_environment_props_8
+  - first:
+      213: 21300018
+    second: Frozen_environment_props_9
+  - first:
+      213: 21300020
+    second: Frozen_environment_props_10
+  - first:
+      213: 21300022
+    second: Frozen_environment_props_11
+  - first:
+      213: 21300024
+    second: Frozen_environment_props_12
+  - first:
+      213: 21300026
+    second: Frozen_environment_props_13
+  - first:
+      213: 21300028
+    second: Frozen_environment_props_14
+  - first:
+      213: 21300030
+    second: Frozen_environment_props_15
+  - first:
+      213: 21300032
+    second: Frozen_environment_props_16
+  - first:
+      213: 21300034
+    second: Frozen_environment_props_17
+  - first:
+      213: 21300036
+    second: Frozen_environment_props_18
+  - first:
+      213: 21300038
+    second: Frozen_environment_props_19
+  - first:
+      213: 21300040
+    second: Frozen_environment_props_20
+  - first:
+      213: 21300042
+    second: Frozen_environment_props_21
+  - first:
+      213: 21300044
+    second: Frozen_environment_props_22
+  - first:
+      213: 21300046
+    second: Frozen_environment_props_23
+  - first:
+      213: 21300048
+    second: Frozen_environment_props_24
+  - first:
+      213: 21300050
+    second: Frozen_environment_props_25
+  - first:
+      213: 21300052
+    second: Frozen_environment_props_26
+  - first:
+      213: 21300054
+    second: Frozen_environment_props_27
+  - first:
+      213: 21300056
+    second: Frozen_environment_props_28
+  - first:
+      213: 21300058
+    second: Frozen_environment_props_29
+  - first:
+      213: 21300060
+    second: Frozen_environment_props_30
+  - first:
+      213: 21300062
+    second: Frozen_environment_props_31
+  - first:
+      213: 21300064
+    second: Frozen_environment_props_32
+  - first:
+      213: 21300066
+    second: Frozen_environment_props_33
+  - first:
+      213: 21300068
+    second: Frozen_environment_props_34
+  - first:
+      213: 21300070
+    second: Frozen_environment_props_35
+  - first:
+      213: 21300072
+    second: Frozen_environment_props_36
+  - first:
+      213: 21300074
+    second: Frozen_environment_props_37
+  - first:
+      213: 21300076
+    second: Frozen_environment_props_38
+  - first:
+      213: 21300078
+    second: Frozen_environment_props_39
+  - first:
+      213: 21300080
+    second: Frozen_environment_props_40
+  - first:
+      213: 21300082
+    second: Frozen_environment_props_41
+  - first:
+      213: 21300084
+    second: Frozen_environment_props_42
+  - first:
+      213: 21300086
+    second: Frozen_environment_props_43
+  - first:
+      213: 21300088
+    second: Frozen_environment_props_44
+  - first:
+      213: 21300090
+    second: Frozen_environment_props_45
+  - first:
+      213: 21300092
+    second: Frozen_environment_props_46
+  - first:
+      213: 21300094
+    second: Frozen_environment_props_47
+  - first:
+      213: 21300096
+    second: Frozen_environment_props_48
+  - first:
+      213: 21300098
+    second: Frozen_environment_props_49
+  - first:
+      213: 21300100
+    second: Frozen_environment_props_50
+  - first:
+      213: 21300102
+    second: Frozen_environment_props_51
+  - first:
+      213: 21300104
+    second: Frozen_environment_props_52
+  - first:
+      213: 21300106
+    second: Frozen_environment_props_53
+  - first:
+      213: 21300108
+    second: Frozen_environment_props_54
+  - first:
+      213: 21300110
+    second: Frozen_environment_props_55
+  - first:
+      213: 21300112
+    second: Frozen_environment_props_56
+  - first:
+      213: 21300114
+    second: Frozen_environment_props_57
+  - first:
+      213: 21300116
+    second: Frozen_environment_props_58
+  - first:
+      213: 21300118
+    second: Frozen_environment_props_59
+  - first:
+      213: 21300120
+    second: Frozen_environment_props_60
+  - first:
+      213: 21300122
+    second: Frozen_environment_props_61
+  - first:
+      213: 21300124
+    second: Frozen_environment_props_62
+  - first:
+      213: 21300126
+    second: Frozen_environment_props_63
+  - first:
+      213: 21300128
+    second: Frozen_environment_props_64
+  - first:
+      213: 21300130
+    second: Frozen_environment_props_65
+  - first:
+      213: 21300132
+    second: Frozen_environment_props_66
+  - first:
+      213: 21300134
+    second: Frozen_environment_props_67
+  - first:
+      213: 21300136
+    second: Frozen_environment_props_68
+  - first:
+      213: 21300138
+    second: Frozen_environment_props_69
+  - first:
+      213: 21300140
+    second: Frozen_environment_props_70
+  - first:
+      213: 21300142
+    second: Frozen_environment_props_71
+  - first:
+      213: 21300144
+    second: Frozen_environment_props_72
+  - first:
+      213: 21300146
+    second: Frozen_environment_props_73
+  - first:
+      213: 21300148
+    second: Frozen_environment_props_74
+  - first:
+      213: 21300150
+    second: Frozen_environment_props_75
+  - first:
+      213: 21300152
+    second: Frozen_environment_props_76
+  - first:
+      213: 21300154
+    second: Frozen_environment_props_77
+  - first:
+      213: 21300156
+    second: Frozen_environment_props_78
+  - first:
+      213: 21300158
+    second: Frozen_environment_props_79
+  - first:
+      213: 21300160
+    second: Frozen_environment_props_80
+  - first:
+      213: 21300162
+    second: Frozen_environment_props_81
+  - first:
+      213: 21300164
+    second: Frozen_environment_props_82
+  - first:
+      213: 21300166
+    second: Frozen_environment_props_83
+  - first:
+      213: 21300168
+    second: Frozen_environment_props_84
+  - first:
+      213: 21300170
+    second: Frozen_environment_props_85
+  - first:
+      213: 21300172
+    second: Frozen_environment_props_86
+  - first:
+      213: 21300174
+    second: Frozen_environment_props_87
+  - first:
+      213: 21300176
+    second: Frozen_environment_props_88
+  - first:
+      213: 21300178
+    second: Frozen_environment_props_89
+  - first:
+      213: 21300180
+    second: Frozen_environment_props_90
+  - first:
+      213: 21300182
+    second: Frozen_environment_props_91
+  - first:
+      213: 21300184
+    second: Frozen_environment_props_92
+  - first:
+      213: 21300186
+    second: Frozen_environment_props_93
+  - first:
+      213: 21300188
+    second: Frozen_environment_props_94
+  - first:
+      213: 21300190
+    second: Frozen_environment_props_95
+  - first:
+      213: 21300192
+    second: Frozen_environment_props_96
+  - first:
+      213: 21300194
+    second: Frozen_environment_props_97
+  - first:
+      213: 21300196
+    second: Frozen_environment_props_98
+  - first:
+      213: 21300198
+    second: Frozen_environment_props_99
+  - first:
+      213: 21300200
+    second: Frozen_environment_props_100
+  - first:
+      213: 21300202
+    second: Frozen_environment_props_101
+  - first:
+      213: 21300204
+    second: Frozen_environment_props_102
+  - first:
+      213: 21300206
+    second: Frozen_environment_props_103
+  - first:
+      213: 21300208
+    second: Frozen_environment_props_104
+  - first:
+      213: 21300210
+    second: Frozen_environment_props_105
+  - first:
+      213: 21300212
+    second: Frozen_environment_props_106
+  - first:
+      213: 21300214
+    second: Frozen_environment_props_107
+  - first:
+      213: 21300216
+    second: Frozen_environment_props_108
+  - first:
+      213: 21300218
+    second: Frozen_environment_props_109
+  - first:
+      213: 21300220
+    second: Frozen_environment_props_110
+  - first:
+      213: 21300222
+    second: Frozen_environment_props_111
+  - first:
+      213: 21300224
+    second: Frozen_environment_props_112
+  - first:
+      213: 21300226
+    second: Frozen_environment_props_113
+  - first:
+      213: 21300228
+    second: Frozen_environment_props_114
+  - first:
+      213: 21300230
+    second: Frozen_environment_props_115
+  - first:
+      213: 21300232
+    second: Frozen_environment_props_116
+  - first:
+      213: 21300234
+    second: Frozen_environment_props_117
+  - first:
+      213: 21300236
+    second: Frozen_environment_props_118
+  - first:
+      213: 21300238
+    second: Frozen_environment_props_119
+  - first:
+      213: 21300240
+    second: Frozen_environment_props_120
+  - first:
+      213: 21300242
+    second: Frozen_environment_props_121
+  - first:
+      213: 21300244
+    second: Frozen_environment_props_122
+  - first:
+      213: 21300246
+    second: Frozen_environment_props_123
+  - first:
+      213: 21300248
+    second: Frozen_environment_props_124
+  - first:
+      213: 21300250
+    second: Frozen_environment_props_125
+  - first:
+      213: 21300252
+    second: Frozen_environment_props_126
+  - first:
+      213: 21300254
+    second: Frozen_environment_props_127
+  - first:
+      213: 21300256
+    second: Frozen_environment_props_128
+  - first:
+      213: 21300258
+    second: Frozen_environment_props_129
+  - first:
+      213: 21300260
+    second: Frozen_environment_props_130
+  - first:
+      213: 21300262
+    second: Frozen_environment_props_131
+  - first:
+      213: 21300264
+    second: Frozen_environment_props_132
+  - first:
+      213: 21300266
+    second: Frozen_environment_props_133
+  - first:
+      213: 21300268
+    second: Frozen_environment_props_134
+  - first:
+      213: 21300270
+    second: Frozen_environment_props_135
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Frozen_environment_props_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1104
+        width: 93
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079bc2c7d9a493a48aebc0066554bcf0
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_1
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1104
+        width: 45
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df85268778537846acfebd1a9f6649f
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_2
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1104
+        width: 72
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e13f303122fcc41a9a45694d881a2c
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_3
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1104
+        width: 43
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c8492be81bcb34aaae6f5a592e8c3e
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_4
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1104
+        width: 22
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23351bc4cc24ab4d8d3bc82f4ac5e1d
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_5
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 1104
+        width: 37
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9069c9d88d8506458fd1fe9056d73ce
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_6
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1104
+        width: 10
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b62bbea11d7b44fabf22941236d487
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_7
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1104
+        width: 30
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ff96a8cb5ccb144bd9b235c099f44a
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_8
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1104
+        width: 60
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7d34d04f964bc44b57be15cd451eb6
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_9
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1104
+        width: 43
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d467d057f3efa7349b133cc0202aad58
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_10
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 1104
+        width: 22
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8c50a1c439d00448de29a1a8025b46
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_11
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1104
+        width: 37
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a06cf58f7c52444b75b69c8bd00726
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_12
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 1104
+        width: 10
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df8f25d234b8c24fad2dd7459339cb0
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_13
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1104
+        width: 30
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d675dd3376f9e414a822ebe356564dc4
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_14
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 1104
+        width: 60
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aebabeb5f68b10042a0ab9e2ddade82a
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_15
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1031
+        width: 61
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84a2127fe17f68e4ca9ac49a1832c872
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_16
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 1027
+        width: 63
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079eb7da30441624ba88a908a7d7c083
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_17
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 1026
+        width: 61
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041388e190ff54c42accbc3885463043
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_18
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 1031
+        width: 60
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba901110d54a221429702867a0736109
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_19
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1031
+        width: 55
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbfe8afff48646f4fa937a0972933dfe
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_20
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1031
+        width: 111
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808a3fb914dd2d54584ec4d6856abb83
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_21
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1031
+        width: 70
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963ad5419a327c94cac2445d53fa01d7
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_22
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1031
+        width: 62
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e54a6f00c979f4482e09e72d5068f9
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_23
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1030
+        width: 152
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85389d4d4028134d85bb5fcf0c5742f
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_24
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1031
+        width: 36
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e591765e33a043743ac32bad695af7fe
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_25
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 1031
+        width: 26
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9dd932c5972cea4f9181b0310e7039a
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_26
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1031
+        width: 24
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532b49bfbefd3fd4a8da9ea27564fcb5
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_27
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1031
+        width: 34
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3413cba4e60c746488bb1a210f6863e1
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_28
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1031
+        width: 56
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a049d91bc9a8a3948a8a56f66cea45a6
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_29
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 1031
+        width: 31
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799b3847d6f25d84dba8caa9e377d0e3
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_30
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 954
+        width: 44
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081b80803de2da54a884149c6c21331f
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 956
+        width: 30
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80a63bc5f0197b44998b3b7807d168d
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_32
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 955
+        width: 60
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdaef51c595a9f1478a74c2bde63825f
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_33
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 954
+        width: 93
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ed6b84281384a44b85d5a57bd6fd98
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_34
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 954
+        width: 45
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a96011e5baa5be74299d585b6b7690f4
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_35
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 954
+        width: 72
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5ec46cc9ec7794bafffdf37a0deacf
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_36
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 985
+        width: 43
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b58f15c271a16346a9f6a83c8420bc8
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_37
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 972
+        width: 28
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ab7e3b099c7c44f88c8431836b089e
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_38
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 940
+        width: 55
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ee338a39c41b54fba248e4e16d7d4d
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_39
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 940
+        width: 48
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692c31be06a947d4abb135de88295cb7
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_40
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 942
+        width: 50
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658447001b6eed0478c47d1c6ee5b8b8
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_41
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 943
+        width: 39
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4546069553f52cb4c9f18ba155e54049
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_42
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 941
+        width: 57
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63765edbc4c6d84ba31238c02c9b542
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_43
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 938
+        width: 58
+        height: 79
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0255ae6634fdbd4479cbcec0cd5627cc
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_44
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 955
+        width: 22
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e74b3cef609c574da6439911204fbe6
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_45
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 955
+        width: 37
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb8376bf1e115441afa79924e4f993a
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_46
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 956
+        width: 10
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd3b9813bcb16a44ab258da25c23d34
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_47
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 864
+        width: 113
+        height: 98
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6762c3804dc86574cbcacbdc03ac852e
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_48
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 862
+        width: 30
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87cb6cf952699d14abfbba02e03b8f3f
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_49
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 864
+        width: 93
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647c4021b2c43ba46bf264343c8f1200
+      internalID: 21300098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_50
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 863
+        width: 45
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ab0596d7ebc5b4e95e06fb0015b15f
+      internalID: 21300100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_51
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 863
+        width: 149
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1007b31d884a1784fab6c6b1378ca7c0
+      internalID: 21300102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_52
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 863
+        width: 111
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a94d1cbd41456843bcf0a20aa7937a0
+      internalID: 21300104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_53
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 883
+        width: 38
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e148f4de20585424a92d071aaaabbb1b
+      internalID: 21300106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_54
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 883
+        width: 22
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85926b543ca21e24db8c3814711c9bcd
+      internalID: 21300108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_55
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 883
+        width: 20
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a40cecba88cd0748b19c1313c5a2444
+      internalID: 21300110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_56
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 883
+        width: 20
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83ce6a8d5405844db7b86885b959db6
+      internalID: 21300112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_57
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 905
+        width: 45
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863a9acc5e6477749bbffd43f651b6f6
+      internalID: 21300114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_58
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 905
+        width: 24
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2490fd37e0bbf498c28ac65423aca6
+      internalID: 21300116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_59
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 867
+        width: 30
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ab43de60cd35b46a47d6c97ede9e5b
+      internalID: 21300118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_60
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 863
+        width: 72
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6f6de37dc16204abcf9e1d269f897e
+      internalID: 21300120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_61
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 883
+        width: 21
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd11f26f15913db4a8d1014968ce1cac
+      internalID: 21300122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_62
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 883
+        width: 55
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455115ac28bfa664c93d5871c5b877bc
+      internalID: 21300124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_63
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 884
+        width: 15
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d802c13e1175bd47bb4bc0908d873c7
+      internalID: 21300126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_64
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 884
+        width: 38
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6908fdddc64562418e278e366032c00
+      internalID: 21300128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_65
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 884
+        width: 42
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4852388a7f97844c8417a98f68d3e52
+      internalID: 21300130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_66
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 749
+        width: 97
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7fdff996bbaf54fa8436ccaa893802
+      internalID: 21300132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_67
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 749
+        width: 110
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a5132c4b3554b48a18a82a9190aae4
+      internalID: 21300134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_68
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 750
+        width: 36
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f0fef6d78ac704baf52822e63d0984
+      internalID: 21300136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_69
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 749
+        width: 29
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805f462d8eda94542b8eefe82286c78b
+      internalID: 21300138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_70
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 749
+        width: 30
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530521390920f3b4b95f5217f59df63e
+      internalID: 21300140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_71
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 749
+        width: 46
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b350216ffa58a4b94ba068fe926b5a
+      internalID: 21300142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_72
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 749
+        width: 75
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234110b6fff1f9b479f9b2b2c3c0bb38
+      internalID: 21300144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_73
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 747
+        width: 33
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d814b2d931b6294aa926aa02b3673c1
+      internalID: 21300146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_74
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 747
+        width: 61
+        height: 98
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f52601177cba624caa8b9be252182eb
+      internalID: 21300148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_75
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 745
+        width: 61
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46faab7a28110b242859b3ac6b9156a1
+      internalID: 21300150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_76
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 744
+        width: 61
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6c907127ac7754ca1fff9069edf9ab
+      internalID: 21300152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_77
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 746
+        width: 61
+        height: 99
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cda0912af91b6e4c92e01437392410a
+      internalID: 21300154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_78
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 643
+        width: 56
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5df14a8c409ebb4981cc075ea6f131c
+      internalID: 21300156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_79
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 643
+        width: 85
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2e0da358455914f9829da903960fbf
+      internalID: 21300158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_80
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 643
+        width: 119
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8ca0e88fd519447bada9322189fc70
+      internalID: 21300160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_81
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 644
+        width: 80
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a9fae3f6272654895d7de2d2838f42
+      internalID: 21300162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_82
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 644
+        width: 94
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f39e2d01b7b9d24ba22905b0b35f84b
+      internalID: 21300164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_83
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 644
+        width: 53
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389e00d9bb6d85346a912a6e4145b610
+      internalID: 21300166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_84
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 644
+        width: 76
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd159e7bbc319db44a715bb1aec49399
+      internalID: 21300168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_85
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 644
+        width: 118
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a960f8cc7c5d54eb23f2bfe5c9d91b
+      internalID: 21300170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_86
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 644
+        width: 109
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff23fe6f97aef64ca61a0ff36848d84
+      internalID: 21300172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_87
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 644
+        width: 124
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff3e6859247f8f4aa814ef0a399ef95
+      internalID: 21300174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_88
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 644
+        width: 119
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2493dbdc0e80e459c48d64c581092b
+      internalID: 21300176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_89
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 488
+        width: 69
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0142a96df4627714a9d05a41d1bc750a
+      internalID: 21300178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_90
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 559
+        width: 83
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadddc35dd935234194f7037393d0479
+      internalID: 21300180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_91
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 559
+        width: 71
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fddc83feeff39b8478a85cfd9c2fe7a2
+      internalID: 21300182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_92
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 559
+        width: 63
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa889e078f5bca4497131f490d27dae
+      internalID: 21300184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_93
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 559
+        width: 26
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5a1889a45f26c42a8f8e0bed549a15
+      internalID: 21300186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_94
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 559
+        width: 110
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62a97d5f7225cf469cd04921d29b886
+      internalID: 21300188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_95
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 566
+        width: 88
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2867d8320b30911488c626f8f4961cda
+      internalID: 21300190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_96
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 566
+        width: 137
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba3e9e22bb142144815aa23ef7cd81b
+      internalID: 21300192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_97
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 566
+        width: 137
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e501b971059a56e4fa706b4fd8aabcd3
+      internalID: 21300194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_98
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 566
+        width: 177
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ad461a6ac722645af00dcfdab26e38
+      internalID: 21300196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_99
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 488
+        width: 51
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37bebfb815a7e114f9c780ba25d4477b
+      internalID: 21300198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_100
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 488
+        width: 130
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd1292c0fbce4e4d9fe756b642ed232
+      internalID: 21300200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_101
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 488
+        width: 49
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26092e905b303874b8ae8bdb7bab0c66
+      internalID: 21300202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_102
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 488
+        width: 51
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cde5b7b29aa8d74393184e0162eca80
+      internalID: 21300204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_103
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 488
+        width: 98
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a54a4570978d4a46970e621f075170e
+      internalID: 21300206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_104
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 488
+        width: 145
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f0f34d4c46c66479a1e9a8f96e5596
+      internalID: 21300208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_105
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 488
+        width: 73
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82cd55505980c5d4aa12651fd379d1d0
+      internalID: 21300210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_106
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 488
+        width: 68
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ec979852223ce4f87ccc3cb270ba79
+      internalID: 21300212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_107
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 491
+        width: 57
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c02cd82f7f21449a96b36863aa7314
+      internalID: 21300214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_108
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 491
+        width: 24
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f82854735c74041a7abd62bccbdaab
+      internalID: 21300216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_109
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 491
+        width: 51
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448924021147094428f364db93ded603
+      internalID: 21300218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_110
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 491
+        width: 67
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0457c8f0dd02e074cb4bb86686c76ebc
+      internalID: 21300220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_111
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 491
+        width: 54
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7968fdbe8a3b4f640bd02bbfa4c08c84
+      internalID: 21300222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_112
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 491
+        width: 34
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61031b5035f52f4eb05400e25909b4a
+      internalID: 21300224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_113
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 491
+        width: 39
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683722640e455ed4aa0f49ac7f9e7ad4
+      internalID: 21300226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_114
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 491
+        width: 81
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02022380a61403940a6a865ebd8d3941
+      internalID: 21300228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_115
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 491
+        width: 40
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1465b64633369f49b47c0660a4c2e75
+      internalID: 21300230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_116
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 309
+        width: 88
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca7890273d376545b6fd0b37bf3a0a0
+      internalID: 21300232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_117
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 310
+        width: 190
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a9722bc7fc3c541b9360af73e4fdea
+      internalID: 21300234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_118
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 310
+        width: 170
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292b4ac7126e1c3429a03d3aad6ca3b8
+      internalID: 21300236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_119
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 310
+        width: 233
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85891bab2bdfd224ca6f871f0e11d0be
+      internalID: 21300238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_120
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 310
+        width: 182
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44e971fba708bc439be2f9af3fe18c3
+      internalID: 21300240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_121
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 310
+        width: 199
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ef9404d54e931428b91b1ef3d261ce
+      internalID: 21300242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_122
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 310
+        width: 152
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06802252cd7a9454d8448748ffc68660
+      internalID: 21300244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_123
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 124
+        width: 62
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba02702cf49b0746a4659aad1731f5f
+      internalID: 21300246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_124
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 124
+        width: 51
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3215f85b8c1a0f744a69392c486d91de
+      internalID: 21300248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_125
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 125
+        width: 77
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3d8087f3e6df44aba2651c19a5e67e
+      internalID: 21300250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_126
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 124
+        width: 35
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2354bde0b57f8d446a0b187ebf168305
+      internalID: 21300252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_127
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 116
+        width: 97
+        height: 131
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfa462dfcec5de4cb39485fb64d68e7
+      internalID: 21300254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_128
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 122
+        width: 72
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc44724c098ed34aaf1d4c410efef9a
+      internalID: 21300256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_129
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 121
+        width: 79
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30945cb1b0c343542973f8f06b4db512
+      internalID: 21300258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_130
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 126
+        width: 124
+        height: 125
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780fce01cc220e64ebe9ae1aa0145a08
+      internalID: 21300260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_131
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 127
+        width: 94
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd0ffe59edf7814a916ca7277e364b6
+      internalID: 21300262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_132
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 126
+        width: 80
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6f469b3c1a47049bb026c7e86f819d
+      internalID: 21300264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_133
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 127
+        width: 78
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dbf404f3e92481478554a82026b45fe
+      internalID: 21300266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_134
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 128
+        width: 154
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924e1e0b826fd2b43bb02da1911457f1
+      internalID: 21300268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_environment_props_135
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 126
+        width: 140
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40f0265ce89d6e44850104a80bd55ec
+      internalID: 21300270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a1a3b642825ba7f49a07e801c4eb14fb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
