@@ -33,7 +33,27 @@ public class BehaviorMove : BehaviorNode
 
         }
 
+        //skill
+        #region Skill
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            ps.nowSkill = 0;
+            return false;
+        }
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            ps.nowSkill = 1;
+            return false;
+        }
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            ps.nowSkill = 2;
+            return false;
+        }
+        #endregion
 
+
+        //jump
         RaycastHit2D hit;
         if(Input.GetKeyDown(KeyCode.Space))
         {
