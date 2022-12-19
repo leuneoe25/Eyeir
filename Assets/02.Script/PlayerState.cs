@@ -6,6 +6,7 @@ public class PlayerState : MonoBehaviour
 {
     public float Speed = 10;
     public float JumpPower = 20;
+
     public bool isWallWalk = false;
     public bool Rope = false;
     public bool isGround = false;
