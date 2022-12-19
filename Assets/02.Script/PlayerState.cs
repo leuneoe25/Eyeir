@@ -20,7 +20,7 @@ public class PlayerState : MonoBehaviour
     private StateAni beforeState = StateAni.Idle;
     void Start()
     {
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -41,20 +41,19 @@ public class PlayerState : MonoBehaviour
     }
     public void SetAnimator(StateAni state)
     {
-        if(beforeState == StateAni.Idle && state == StateAni.Run)
-        {
-            state = StateAni.beforRun;
-        }
-        else
-        {
-            beforeState = state;
-        }
-        //animator.SetInteger("State",(int)state);
+        //if(beforeState == StateAni.Idle && state == StateAni.Run)
+        //{
+        //    state = StateAni.beforRun;
+        //}
+        //else
+        //{
+        //    beforeState = state;
+        //}
+        animator.SetInteger("State", (int)state);
     }
     public enum StateAni
     {
         Idle,
-        beforRun,
         Run,
         Hooking,
         Slide,
