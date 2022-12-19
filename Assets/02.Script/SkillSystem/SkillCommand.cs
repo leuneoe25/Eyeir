@@ -9,6 +9,32 @@ public class SkillCommand : MonoBehaviour
     [SerializeField] private Skill s_1;
     [SerializeField] private Skill s_2;
     [SerializeField] private Skill s_3;
+    #region Singleton
+    private static SkillCommand instance = null;
+    void Awake()
+    {
+        if (null == instance)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
+    public static SkillCommand Instance
+    {
+        get
+        {
+            if (null == instance)
+            {
+                return null;
+            }
+            return instance;
+        }
+    }
+    #endregion
     private void Start()
     {
         skills.Add(0, s_1);

@@ -43,6 +43,7 @@ public class ItemManager : MonoBehaviour
 
     }
     public List<Item> Inventory = new List<Item>();
+    public List<Sprite> ItemImage = new List<Sprite>();
     private ItemSystem ItemSystem = new ItemSystem();
     void Start()
     {
@@ -66,6 +67,10 @@ public class ItemManager : MonoBehaviour
             Inventory[index].AddCount();
         }
     }
+    public Item GetItem(ItemName item)
+    {
+        return ItemSystem.NewItemAdd(item);
+    }
     public void UseItem(int index)
     {
         //사용 방법 : UseItem(include(BrokenMirror));
@@ -78,6 +83,10 @@ public class ItemManager : MonoBehaviour
         {
 
         }
+    }
+    public Sprite GetItemSprite(ItemName item)
+    {
+        return ItemImage[(int)item];
     }
     public int include(ItemName item)
     {

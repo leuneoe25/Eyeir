@@ -38,6 +38,7 @@ public class ItemSystem
     {
         private ItemManager.ItemName name;
         private int Count;
+        private int price;
         public BrokenMirror(ItemManager.ItemName name)
         {
             this.name = name;

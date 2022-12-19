@@ -82,10 +82,21 @@ public class BehaviorMove : BehaviorNode
         if (ps.Rope)
             return false;
 
-        if (ps.isGround)
-            rigidbody.velocity = new Vector2(0, rigidbody.velocity.y);
-
-        rigidbody.velocity = new Vector2(x * ps.Speed, rigidbody.velocity.y);
+        //if (ps.isGround && !ps.isIceTile)
+        //    rigidbody.velocity = new Vector2(0, rigidbody.velocity.y);
+        //else
+        //    
+        if(ps.isIceTile)
+        {
+            
+            if (x != 0)
+                rigidbody.velocity = new Vector2(x * ps.Speed, rigidbody.velocity.y);
+        }
+        else
+        {
+            rigidbody.velocity = new Vector2(x * ps.Speed, rigidbody.velocity.y);
+        }
+        
         //Ani
         #region Animator
         if (rigidbody.velocity.x == 0)

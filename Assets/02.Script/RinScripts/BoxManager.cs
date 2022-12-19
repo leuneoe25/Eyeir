@@ -65,9 +65,9 @@ public class BoxManager : ItemManager
         //}
         #endregion
     }
-    private IEnumerator DestoryBox()
+    IEnumerator DestoryBox()
     {
-        GetComponent<BoxCollider>().enabled = false;
+        GetComponent<BoxCollider2D>().enabled = false;
         //페이드 아웃 실행
         yield return new WaitForEndOfFrame();
         Destroy(gameObject);
