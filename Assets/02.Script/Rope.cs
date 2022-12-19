@@ -192,10 +192,12 @@ public class Rope : MonoBehaviour
                 if (PMotion)//생략화 가능
                 {
                     deg -= Time.deltaTime * objSpeed;
+                    Player.transform.localScale = new Vector3(-1, 1, 1);
                 }
                 else if (!PMotion)
                 {
                     deg += Time.deltaTime * objSpeed;
+                    Player.transform.localScale = new Vector3(1, 1, 1);
                 }
                 if (deg < 360)
                 {
@@ -416,7 +418,7 @@ public class Rope : MonoBehaviour
         lineRenderer.positionCount = ropePositions.Length;
         lineRenderer.SetPositions(ropePositions);
     }
-    private void DeletRope()
+    public void DeletRope()
     {
         Debug.Log("Delet");
         //부스터 끝내기

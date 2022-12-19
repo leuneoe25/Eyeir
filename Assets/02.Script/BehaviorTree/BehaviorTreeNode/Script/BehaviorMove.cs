@@ -12,8 +12,34 @@ public class BehaviorMove : BehaviorNode
         if (ps.isWallWalk)
             return false;
 
-        RaycastHit2D hit;
 
+        if (!ps.isGround)
+        {
+
+            if (!ps.isWallWalk)
+            {
+
+                RaycastHit2D UpHit = Physics2D.Raycast(new Vector2(Character.transform.position.x, Character.transform.position.y + 0.5f), new Vector2(-Character.transform.localScale.x, 0), 0.55f, LayerMask.GetMask("Ground", "Wall"));
+                Debug.DrawRay(new Vector2(Character.transform.position.x, Character.transform.position.y + 0.5f), new Vector2(ps.WallWalkPosX, 0) * 0.6f, Color.blue, 2);
+                RaycastHit2D DwonHit = Physics2D.Raycast(new Vector2(Character.transform.position.x, Character.transform.position.y - 0.5f), new Vector2(-Character.transform.localScale.x, 0), 0.55f, LayerMask.GetMask("Ground", "Wall"));
+                Debug.DrawRay(new Vector2(Character.transform.position.x, Character.transform.position.y - 0.5f), new Vector2(ps.WallWalkPosX, 0) * 0.6f, Color.blue, 2);
+                if (UpHit.collider != null && DwonHit.collider != null)
+                {
+                    //Debug.Log(UpHit.transform.name + " " + DwonHit.transform.name);
+                    ps.isWallWalk = true;
+
+                }
+            }
+
+        }
+
+
+        RaycastHit2D hit;
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            ps.isJumping = true;
+            return false;
+        }
         hit = Physics2D.Raycast(Character.transform.position, Vector2.down, 1.5f, LayerMask.GetMask("Ground"));
         if (hit.collider != null)
         {
