@@ -22,12 +22,23 @@ public class BehaviorJump : BehaviorNode
         if (ps.isGround)
         {
             rigidbody.AddForce(Vector2.up * ps.JumpPower, ForceMode2D.Impulse);
+
+            ps.SetAnimator(PlayerState.StateAni.jump);
             ps.isJumping = false;
             return false;
         }
-        
 
 
+        #region Animator
+        //if(rigidbody.velocity.x == 0)
+        //{
+        //    ps.SetAnimator(PlayerState.StateAni.Idle);
+        //}
+        //else
+        //{
+        //    ps.SetAnimator(PlayerState.StateAni.Run);
+        //}
+        #endregion
 
         //if (ps.isGround)
         //    rigidbody.velocity = new Vector2(0, rigidbody.velocity.y);

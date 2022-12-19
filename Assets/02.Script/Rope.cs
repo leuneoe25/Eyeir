@@ -423,6 +423,7 @@ public class Rope : MonoBehaviour
     public void DeletRope()
     {
         //부스터 끝내기
+        Player.GetComponent<PlayerState>().SetAnimator(PlayerState.StateAni.Idle);
         isBooster = false;
         Player.transform.GetChild(0).gameObject.SetActive(false);
         isRope = false;
@@ -480,6 +481,7 @@ public class Rope : MonoBehaviour
         {
             x = -1;
         }
+        Player.GetComponent<PlayerState>().SetAnimator(PlayerState.StateAni.Slide);
         yield return new WaitForSeconds(0.1f);
         while (Mathf.Abs(Player.transform.position.x - pos.x) > 0.5f)
         {
@@ -494,10 +496,12 @@ public class Rope : MonoBehaviour
         isCutDown = false;
         circleR = r;
         deg = 180;
+        Player.GetComponent<PlayerState>().SetAnimator(PlayerState.StateAni.Hooking);
         //Player.transform.position += Vector3.up;
     }
     IEnumerator SkyCircleCutDown(float r, Vector3 pos)
     {
+        Player.GetComponent<PlayerState>().SetAnimator(PlayerState.StateAni.Hooking);
         isCutDown = true;
         yield return new WaitForSeconds(0.1f);
 
