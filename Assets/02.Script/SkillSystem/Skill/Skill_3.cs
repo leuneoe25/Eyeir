@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Store : MonoBehaviour
+public class Skill_3 : MonoBehaviour
 {
-    [SerializeField] private SkillCommand skill;
-    [SerializeField] private GoodsSystem goods;
-
+    // Start is called before the first frame update
     void Start()
     {
         

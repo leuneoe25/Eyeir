@@ -8,7 +8,6 @@ public class GasSystem : MonoBehaviour
     public float Usage = 1f;
     void Start()
     {
-        gas = 100;
     }
 
     // Update is called once per frame
