@@ -43,9 +43,17 @@ public class Move : MonoBehaviour
         {
             if(isWallWalk)
             {
-               
-                rigidbody.gravityScale = 0;
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+
+                    StopWallWalk();
+
+                    return;
+                }
+                isWallWalk = true;
+                //rigidbody.gravityScale = 0;
                 float y = Input.GetAxisRaw("Vertical");
+                
                 rigidbody.velocity = new Vector2(0, 0);
                 if (y>=1)
                 {
@@ -54,8 +62,8 @@ public class Move : MonoBehaviour
                     if(hitEndWall.Length == 0)
                     {
                         //대각선
-                        Debug.Log(null);
-                        rigidbody.AddForce(Vector2.up * JumpPower, ForceMode2D.Impulse);
+                        //Debug.Log(null);
+                        
                         StopWallWalk();
                     }
                     transform.position += Vector3.up * 10*Time.deltaTime;
@@ -63,20 +71,16 @@ public class Move : MonoBehaviour
                 else if(y<=-1)
                 {
                     hitEndWall = Physics2D.RaycastAll(new Vector2(transform.position.x, transform.position.y - 0.5f), new Vector2(WallXPos, 0), 5f, LayerMask.GetMask("Ground", "Wall"));
+                    Debug.DrawRay(new Vector2(transform.position.x, transform.position.y - 0.5f), new Vector2(WallXPos, 0) * 5, Color.black);
                     if (hitEndWall.Length == 0)
                     {
                         //대각선
-                        //rigidbody.AddForce(Vector2.up * JumpPower, ForceMode2D.Impulse);
                         StopWallWalk();
                     }
                     transform.position += Vector3.down * 10 * Time.deltaTime;
                 }
                 
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    StopWallWalk();
-                    rigidbody.AddForce(Vector2.up * JumpPower, ForceMode2D.Impulse);
-                }
+                
                 return;
             }
             if (isGround)
@@ -105,10 +109,15 @@ public class Move : MonoBehaviour
         rigidbody.gravityScale = 0;
         WallXPos = PosX;
     }
-    private void StopWallWalk()
+    public void StopWallWalk()
+    {
+        rigidbody.AddForce(Vector2.up * (JumpPower/2), ForceMode2D.Impulse);
+        rigidbody.gravityScale = 5;
+        isWallWalk = false;
+    }
+    private void isWallWalkFalse()
     {
         isWallWalk = false;
-        rigidbody.gravityScale = 5;
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
