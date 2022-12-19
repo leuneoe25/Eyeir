@@ -16,9 +16,11 @@ public class PlayerState : MonoBehaviour
     public int nowSkill = -1;
 
     public SkillCommand command;
+    private Animator animator;
+    private StateAni beforeState = StateAni.Idle;
     void Start()
     {
-        
+        //animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -36,5 +38,27 @@ public class PlayerState : MonoBehaviour
         isWallWalk = true;
         //rigidbody.gravityScale = 0;
         WallWalkPosX = PosX;
+    }
+    public void SetAnimator(StateAni state)
+    {
+        if(beforeState == StateAni.Idle && state == StateAni.Run)
+        {
+            state = StateAni.beforRun;
+        }
+        else
+        {
+            beforeState = state;
+        }
+        //animator.SetInteger("State",(int)state);
+    }
+    public enum StateAni
+    {
+        Idle,
+        beforRun,
+        Run,
+        Hooking,
+        Slide,
+        jump
+
     }
 }

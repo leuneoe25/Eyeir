@@ -54,6 +54,7 @@ public class BehaviorMove : BehaviorNode
 
 
         //jump
+        #region Jump
         RaycastHit2D hit;
         if(Input.GetKeyDown(KeyCode.Space))
         {
@@ -73,7 +74,7 @@ public class BehaviorMove : BehaviorNode
         {
             ps.isJumping = true;
         }
-
+        #endregion
         //move
         float x = Input.GetAxisRaw("Horizontal");
         TransformX(x, Character);
@@ -85,7 +86,17 @@ public class BehaviorMove : BehaviorNode
             rigidbody.velocity = new Vector2(0, rigidbody.velocity.y);
 
         rigidbody.velocity = new Vector2(x * ps.Speed, rigidbody.velocity.y);
-            
+        //Ani
+        #region Animator
+        if (rigidbody.velocity.x == 0)
+        {
+            ps.SetAnimator(PlayerState.StateAni.Idle);
+        }
+        else
+        {
+            ps.SetAnimator(PlayerState.StateAni.Run);
+        }
+        #endregion
         return true;
     }
     private void TransformX(float x, GameObject Character)
