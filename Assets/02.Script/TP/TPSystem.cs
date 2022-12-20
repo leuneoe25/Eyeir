@@ -56,6 +56,7 @@ public class TPSystem : MonoBehaviour
         
         while(gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color.a < 1)
         {
+            Debug.Log("b");
             gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color = color;
             color += new Color(0, 0, 0, 0.1f);
             yield return new WaitForSeconds(0.05f);
@@ -69,7 +70,8 @@ public class TPSystem : MonoBehaviour
     {
         if(SceneManager.GetActiveScene().name != PlayScene)    //플레이중인 씬과 초기씬이 다르다면
         {
-             CountAttackDelay();
+            Debug.Log("a");
+             
 
             //gameObject.SetActive(true);
             //state = true;
@@ -80,6 +82,7 @@ public class TPSystem : MonoBehaviour
     public void TP(string tp2, Vector2 Position)
     {
         pos = Position;
+        StartCoroutine(CountAttackDelay());
         SceneManager.LoadScene(tp2);        //씬 이동
        // gameObject.SetActive(true);
        // state = true;
