@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class TPSystem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    #region Singleton
+    private static TPSystem instance = null;
+    void Awake()
     {
-        
+        if (null == instance)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
-
-    // Update is called once per frame
-    void Update()
+    public static TPSystem Instance
     {
-        
+        get
+        {
+            if (null == instance)
+            {
+                return null;
+            }
+            return instance;
+        }
     }
+    #endregion
 }
