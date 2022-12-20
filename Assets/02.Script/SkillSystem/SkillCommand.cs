@@ -69,6 +69,7 @@ public class SkillCommand : MonoBehaviour
     Dictionary<int, SkillTable> m_mapTb = new Dictionary<int, SkillTable>();
 
     #endregion
+    [SerializeField] private GameObject StabEffect;
     private void Start()
     {
         skills.Add(0, s_1);
@@ -98,13 +99,19 @@ public class SkillCommand : MonoBehaviour
         //if (m_mapTb[1] != null)
         //    Debug.Log(m_mapTb[1].ID + " , " + m_mapTb[1].NPC + " , " + m_mapTb[1].explanation);
     }
-    public void ExcutSkill(int index, PlayerState ps, GameObject Character)
+    public void ExcutSkill(int index, PlayerState ps, GameObject Character, GameObject Effect = null)
     {
-        skills[index].ExcutSkill(ps, Character);
+        if (index == 0)
+            Effect = StabEffect;
+        skills[index].ExcutSkill(ps, Character, Effect);
     }
     public string GetName(int index)
     {
         return m_mapTb[index + 1].Name;
+    }
+    public string GetExplanation(int index)
+    {
+        return m_mapTb[index + 1].explanation;
     }
     public void GetSkillCoolTime(int index)
     {

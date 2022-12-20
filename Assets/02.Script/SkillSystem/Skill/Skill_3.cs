@@ -11,7 +11,7 @@ public class Skill_3 : Skill
     {
         
     }
-    public override void ExcutSkill(PlayerState ps, GameObject Character)
+    public override void ExcutSkill(PlayerState ps, GameObject Character, GameObject Effect = null)
     {
         if (ps.isSkilling)
         {

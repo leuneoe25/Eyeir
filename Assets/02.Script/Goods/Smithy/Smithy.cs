@@ -43,7 +43,6 @@ public class Smithy : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z) && stay && !StoreUI.activeSelf)
         {
 
-            Debug.Log("z");
             //z를 누르시오 표시
             OnStore();
             return;
@@ -67,38 +66,48 @@ public class Smithy : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
             GameObject g = Slots[i];
-            EventTrigger eventTrigger = g.AddComponent<EventTrigger>();
+            g.SetActive(true);
+            EventTrigger eventTrigger = Slots[i].AddComponent<EventTrigger>();
             //설명
             //g.transform.GetChild(0).GetComponent<Image>().sprite = SkillCommand.Instance.GetSkillIcon(i);
-            if (SkillCommand.Instance.GetSkillLevel(i) >= 2)
-            {
-                g.transform.GetChild(4).gameObject.SetActive(true);
-                eventTrigger.triggers.Clear();
-                
-                continue;
-            }
-            g.transform.GetChild(1).GetComponent<Text>().text = SkillCommand.Instance.GetName(i);;
+            g.transform.GetChild(1).GetComponent<Text>().text = SkillCommand.Instance.GetName(i); ;
             g.transform.GetChild(2).GetComponent<Text>().text = "설명";
             g.transform.GetChild(3).gameObject.SetActive(false);
+            if (SkillCommand.Instance.GetSkillLevel(i) == 2)
+            {
+                Slots[i].SetActive(false);
+                //g.transform.GetChild(4).gameObject.SetActive(true);
+                //eventTrigger.triggers.Clear();
+                //eventTrigger = null;
+                //eventTrigger.enabled = false;
+                //Slots[i].AddComponent<EventTrigger>().enabled = false;
 
-            //이벤트 트리거 설정
+                continue;
+            }
+            else
+            {
+                //이벤트 트리거 설정
+                Slots[i].AddComponent<EventTrigger>().enabled = true;
+
+                EventTrigger.Entry entry_PointerDown = new EventTrigger.Entry();
+                entry_PointerDown.eventID = EventTriggerType.PointerEnter;
+                entry_PointerDown.callback.AddListener((data) => { OnPointerEnter(g); });
+                eventTrigger.triggers.Add(entry_PointerDown);
 
 
-            EventTrigger.Entry entry_PointerDown = new EventTrigger.Entry();
-            entry_PointerDown.eventID = EventTriggerType.PointerEnter;
-            entry_PointerDown.callback.AddListener((data) => { OnPointerEnter(g); });
-            eventTrigger.triggers.Add(entry_PointerDown);
+                EventTrigger.Entry entry_Drag = new EventTrigger.Entry();
+                entry_Drag.eventID = EventTriggerType.PointerExit;
+                entry_Drag.callback.AddListener((data) => { OnPointerExit(g); });
+                eventTrigger.triggers.Add(entry_Drag);
 
+                EventTrigger.Entry entry_EndDrag = new EventTrigger.Entry();
+                entry_EndDrag.eventID = EventTriggerType.PointerClick;
+                entry_EndDrag.callback.AddListener((data) => { OnPointerClick(g); });
+                eventTrigger.triggers.Add(entry_EndDrag);
+            }
+            
 
-            EventTrigger.Entry entry_Drag = new EventTrigger.Entry();
-            entry_Drag.eventID = EventTriggerType.PointerExit;
-            entry_Drag.callback.AddListener((data) => { OnPointerExit(g); });
-            eventTrigger.triggers.Add(entry_Drag);
-
-            EventTrigger.Entry entry_EndDrag = new EventTrigger.Entry();
-            entry_EndDrag.eventID = EventTriggerType.PointerClick;
-            entry_EndDrag.callback.AddListener((data) => { OnPointerClick(g); });
-            eventTrigger.triggers.Add(entry_EndDrag);
+           
 
 
         }
@@ -142,7 +151,8 @@ public class Smithy : MonoBehaviour
     }
     private void BuyProduct()
     {
-        Debug.Log("Upgrade " + Select);
+        //재화 소모
+        Debug.Log("Upgrade " + Select+ "  "+ SkillCommand.Instance.GetSkillLevel(Select-1));
         SkillCommand.Instance.SkillLevelUp(Select - 1);
         OnStore();
     }
