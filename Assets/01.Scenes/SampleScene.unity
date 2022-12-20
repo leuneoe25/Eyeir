@@ -1051,6 +1051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damage: 0
   level: 1
+  isSkilling: 0
 --- !u!114 &996499297
 MonoBehaviour:
   m_ObjectHideFlags: 0

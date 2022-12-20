@@ -42,9 +42,9 @@ public class SkillCommand : MonoBehaviour
         skills.Add(2, s_3);
     }
 
-    public void ExcutSkill(int index)
+    public void ExcutSkill(int index, PlayerState ps, GameObject Character)
     {
-        skills[index].ExcutSkill();
+        skills[index].ExcutSkill(ps, Character);
     }
     public void GetSkillCoolTime(int index)
     {

@@ -7,6 +7,11 @@ public class BehaviorSkill : BehaviorNode
 {
     public override bool OnUapdate(PlayerState ps, Rigidbody2D rigidbody, GameObject Character)
     {
+        if (ps.isSkilling)
+        {
+            Debug.Log("ing");
+            return true;
+        }
         if (ps.Rope)
             return false;
         if (ps.isWallWalk)
@@ -18,10 +23,10 @@ public class BehaviorSkill : BehaviorNode
         if (ps.nowSkill == -1)
             return false;
 
-        SkillCommand.Instance.ExcutSkill(ps.nowSkill);
+        SkillCommand.Instance.ExcutSkill(ps.nowSkill,ps, Character);
         ps.nowSkill = -1;
 
-        return false;
+        return true;
 
     }
 }
