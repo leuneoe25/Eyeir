@@ -34,10 +34,9 @@ public class Skill_3 : Skill
 
     public override void SkillLevelUp()
     {
-        if (level == 1)
-        {
-            level++;
-        }
+        if (level >= 2)
+            return;
+        level++;
     }
     private IEnumerator Excut(PlayerState ps, GameObject Character)
     {
