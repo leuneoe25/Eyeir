@@ -71,7 +71,7 @@ public class Rope : MonoBehaviour
             }
             if (hitPlayerLookAt.collider != null)
             {
-                Debug.Log(wallx);
+                
                 Player.GetComponent<PlayerState>().StartWallWalk(wallx);
                 if (lineRenderer.positionCount > 0)
                     DeletRope();

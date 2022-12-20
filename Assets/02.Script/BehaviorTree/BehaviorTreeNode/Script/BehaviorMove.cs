@@ -58,11 +58,6 @@ public class BehaviorMove : BehaviorNode
         //jump
         #region Jump
         RaycastHit2D hit;
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            ps.isJumping = true;
-            return false;
-        }
         hit = Physics2D.Raycast(Character.transform.position, Vector2.down, 1.5f, LayerMask.GetMask("Ground"));
         if (hit.collider != null)
         {
@@ -75,6 +70,11 @@ public class BehaviorMove : BehaviorNode
         if (Input.GetKeyDown(KeyCode.Space))
         {
             ps.isJumping = true;
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ps.isJumping = true;
+            return false;
         }
         #endregion
         //move
