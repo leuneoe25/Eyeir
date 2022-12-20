@@ -18,7 +18,7 @@ public class BehaviorSkill : BehaviorNode
         if (ps.nowSkill == -1)
             return false;
 
-        ps.command.ExcutSkill(ps.nowSkill);
+        SkillCommand.Instance.ExcutSkill(ps.nowSkill);
         ps.nowSkill = -1;
 
         return false;

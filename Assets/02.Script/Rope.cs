@@ -51,6 +51,8 @@ public class Rope : MonoBehaviour
 
     void Update()
     {
+        if (Player.GetComponent<PlayerState>().StopHook)
+            return;
         if (Player.GetComponent<PlayerState>().isWallWalk)
             return;
         

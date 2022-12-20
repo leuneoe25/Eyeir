@@ -75,7 +75,6 @@ public class BehaviorWallWalk : BehaviorNode
             if (hitEndWall.Length == 0  )
             {
                 //´ë°¢¼±
-                Debug.Log(null);
 
                 StopWallWalk(ps, rigidbody, Character);
                 return false;

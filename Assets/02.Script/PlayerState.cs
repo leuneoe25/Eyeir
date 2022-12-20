@@ -6,6 +6,7 @@ public class PlayerState : MonoBehaviour
 {
     public float Speed = 10;
     public float JumpPower = 20;
+
     public bool isWallWalk = false;
     public bool Rope = false;
     public bool isGround = false;
@@ -14,8 +15,8 @@ public class PlayerState : MonoBehaviour
 
     public int PlayerHp = 3;
     public int nowSkill = -1;
-
-    public SkillCommand command;
+    public bool StopHook = false;
+    public bool isIceTile = false;
     private Animator animator;
     private StateAni beforeState = StateAni.Idle;
     void Start()

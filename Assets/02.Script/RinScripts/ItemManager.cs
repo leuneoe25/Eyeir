@@ -4,18 +4,110 @@ using UnityEngine;
 
 public class ItemManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //Item 包府
+    #region Singleton
+    private static ItemManager instance = null;
+    void Awake()
+    {
+        if (null == instance)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
+    public static ItemManager Instance
+    {
+        get
+        {
+            if (null == instance)
+            {
+                return null;
+            }
+            return instance;
+        }
+    }
+    #endregion
+    public enum ItemName
+    {
+        BrokenMirror,
+        Match,
+        Icicle,
+        Snowball,
+        Eyecrystal,
+        Wand,
+        Holly
+
+    }
+    public List<Item> Inventory = new List<Item>();
+    public List<Sprite> ItemImage = new List<Sprite>();
+    private ItemSystem ItemSystem = new ItemSystem();
     void Start()
     {
-        //Debug.Log(Item.BrokenMirror);
-        //Debug.Log(Item.Match);
-        //Debug.Log(Item.Icicle);
-        //Debug.Log(Item.Snowball);
-        //Debug.Log(Item.Eyecrystal);
-        //Debug.Log(Item.Wand);
-        //Debug.Log(Item.Holly);
-        
+
     }
+    
+    public void AddItem(ItemName item)
+    {
+        int index = include(item);
+        //Debug.Log(item.ToString());
+        if (index == -1)
+        {
+            Inventory.Add(ItemSystem.NewItemAdd(item));
+            for(int i= 0;i<Inventory.Count;i++)
+            {
+                Debug.Log( i + " : "+Inventory[i].GetName().ToString());
+            }
+        }
+        else
+        {
+            Inventory[index].AddCount();
+        }
+    }
+    public Item GetItem(ItemName item)
+    {
+        return ItemSystem.NewItemAdd(item);
+    }
+    public void UseItem(int index)
+    {
+        //荤侩 规过 : UseItem(include(BrokenMirror));
+        if (index == -1)
+        {
+            Debug.Log("Index -1");
+            return;
+        }
+        else
+        {
+
+        }
+    }
+    public Sprite GetItemSprite(ItemName item)
+    {
+        return ItemImage[(int)item];
+    }
+    public int include(ItemName item)
+    {
+        for(int i=0;i<Inventory.Count;i++)
+        {
+            if(Inventory[i].GetName() == item)
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public interface Item
+    {
+        public ItemName GetName();
+        public int GetCount();
+        public void AddCount();
+        public void Ues();
+    }
+    
 
 }
 

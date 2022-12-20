@@ -4,6 +4,32 @@ using UnityEngine;
 
 public class GoodsSystem : MonoBehaviour
 {
+    #region Singleton
+    private static GoodsSystem instance = null;
+    void Awake()
+    {
+        if (null == instance)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
+    public static GoodsSystem Instance
+    {
+        get
+        {
+            if (null == instance)
+            {
+                return null;
+            }
+            return instance;
+        }
+    }
+    #endregion
     private int Coin = 100;
 
     public int GetCoin()
