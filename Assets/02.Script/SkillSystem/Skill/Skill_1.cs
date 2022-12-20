@@ -11,7 +11,7 @@ public class Skill_1 : Skill
     {
 
     }
-    public override void ExcutSkill(PlayerState ps, GameObject Character)
+    public override void ExcutSkill(PlayerState ps, GameObject Character, GameObject Effect = null)
     {
         if(ps.isSkilling)
         {
@@ -20,7 +20,7 @@ public class Skill_1 : Skill
         }
         if (coolTime > 0)
             return;
-        StartCoroutine(Excut(ps, Character));
+        StartCoroutine(Excut(ps, Character, Effect));
         
     }
 
@@ -36,13 +36,14 @@ public class Skill_1 : Skill
 
     public override void SkillLevelUp()
     {
-        if(level == 1)
+        level += 1;
+        if (level > 2)
         {
-            level++;
-        }
+            level = 2;
+        }        
     }
 
-    private IEnumerator Excut(PlayerState ps, GameObject Character)
+    private IEnumerator Excut(PlayerState ps, GameObject Character, GameObject Effect)
     {
         ps.isSkilling = true;
         ps.StopHook = true;
@@ -51,8 +52,19 @@ public class Skill_1 : Skill
         //Character.transform.localScale = new Vector3(-Character.transform.localScale.x, 1, 1);
         ps.SetAnimator(PlayerState.StateAni.Stab);
         //Debug.Log()
-        
+        Effect.SetActive(true);
+        if (Character.transform.localScale.x > 0)
+        {
+            Effect.transform.position = new Vector2(Character.transform.position.x - 5, Character.transform.position.y);
+            Effect.transform.localScale = new Vector3(1, 1, 1);
+        }
+        else
+        {
+            Effect.transform.position = new Vector2(Character.transform.position.x + 5, Character.transform.position.y);
+            Effect.transform.localScale = new Vector3(-1, 1, 1);
+        }
         yield return new WaitForSeconds(0.2f);
+        Effect.SetActive(false);
         //캐릭터 이미지가 보고있는 방향이 반대임
         //Character.transform.localScale = new Vector3(-Character.transform.localScale.x, 1, 1);
         coolTime = 0.5f;

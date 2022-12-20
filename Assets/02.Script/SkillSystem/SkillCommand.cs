@@ -8,14 +8,14 @@ public class SkillTable
     public static int GetGoogleSheetGID() { return 522400766; }
 
     public int ID;
-    public string NPC;
+    public string Name;
     public string explanation;
 
     // 초기화를 원하는 모든 변수를 스트링으로 받는 생성자 필요 ( TableWWW의 GetInstance() 에서 사용 )
     public SkillTable(string _1, string _2, string _3)
     {
         ID = int.Parse(_1);
-        NPC = _2;
+        Name = _2;
         explanation = _3;
 
         // bool b    = (int.Parse( 인자 ) == 0) ? false : true;
@@ -64,10 +64,12 @@ public class SkillCommand : MonoBehaviour
 
     public TableSkill val = null;
     public Text m_txtLoading = null;
+    public List<Sprite> SkillIcon = new List<Sprite>();
 
     Dictionary<int, SkillTable> m_mapTb = new Dictionary<int, SkillTable>();
 
     #endregion
+    [SerializeField] private GameObject StabEffect;
     private void Start()
     {
         skills.Add(0, s_1);
@@ -97,12 +99,34 @@ public class SkillCommand : MonoBehaviour
         //if (m_mapTb[1] != null)
         //    Debug.Log(m_mapTb[1].ID + " , " + m_mapTb[1].NPC + " , " + m_mapTb[1].explanation);
     }
-    public void ExcutSkill(int index, PlayerState ps, GameObject Character)
+    public void ExcutSkill(int index, PlayerState ps, GameObject Character, GameObject Effect = null)
     {
-        skills[index].ExcutSkill(ps, Character);
+        if (index == 0)
+            Effect = StabEffect;
+        skills[index].ExcutSkill(ps, Character, Effect);
+    }
+    public string GetName(int index)
+    {
+        return m_mapTb[index + 1].Name;
+    }
+    public string GetExplanation(int index)
+    {
+        return m_mapTb[index + 1].explanation;
     }
     public void GetSkillCoolTime(int index)
     {
         skills[index].GetCoolTime();
+    }
+    public int GetSkillLevel(int index)
+    {
+        return skills[index].GetSkillLevel();
+    }
+    public void SkillLevelUp(int index)
+    {
+        skills[index].SkillLevelUp();
+    }
+    public Sprite GetSkillIcon(int index)
+    {
+        return SkillIcon[index];
     }
 }

@@ -11,7 +11,7 @@ public class Skill_2 : Skill
     {
         
     }
-    public override void ExcutSkill(PlayerState ps, GameObject Character)
+    public override void ExcutSkill(PlayerState ps, GameObject Character, GameObject Effect = null)
     {
         if (ps.isSkilling)
         {
@@ -34,10 +34,9 @@ public class Skill_2 : Skill
 
     public override void SkillLevelUp()
     {
-        if (level == 1)
-        {
-            level++;
-        }
+        if (level >= 2)
+            return;
+        level++;
     }
     private IEnumerator Excut(PlayerState ps, GameObject Character)
     {

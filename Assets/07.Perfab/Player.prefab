@@ -4882,7 +4882,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 50
   m_Sprite: {fileID: -3842353275482561300, guid: bd7a5fa4a6d131240806b272da110e34, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4962,7 +4962,9 @@ MonoBehaviour:
   isJumping: 0
   PlayerHp: 3
   nowSkill: 0
-  command: {fileID: 0}
+  StopHook: 0
+  isIceTile: 0
+  isSkilling: 0
 --- !u!114 &7178128163661962924
 MonoBehaviour:
   m_ObjectHideFlags: 0
