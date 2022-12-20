@@ -2077,7 +2077,7 @@ GameObject:
   - component: {fileID: 1950156044}
   - component: {fileID: 1950156043}
   m_Layer: 0
-  m_Name: tp1
+  m_Name: tp
   m_TagString: Untagged
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2095,9 +2095,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4812c1373c79b1a489abaf76f56958cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 3
   tp1: {fileID: 1950156042}
-  tp2: TestScene
+  tp2: MapScene1
 --- !u!61 &1950156044
 BoxCollider2D:
   m_ObjectHideFlags: 0
