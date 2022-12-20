@@ -36,21 +36,43 @@ public class TPSystem : MonoBehaviour
     private Vector2 pos;
     public GameObject Player;
 
+    Color color;
+
     private bool state;
 
     private void Start()
     {
-        state = true;
-        nowScene = "";  //초기값
-        PlayScene = SceneManager.GetActiveScene().name;
-        Debug.Log("");
+        //SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+        //color.a = 0;
+        //renderer.color = color;
+        ////state = false;
+        //nowScene = "";  //초기값
+        //PlayScene = SceneManager.GetActiveScene().name;
+        //Debug.Log("");
     }
+
+    IEnumerator CountAttackDelay()
+    {
+        
+        while(gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color.a < 1)
+        {
+            gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color = color;
+            color += new Color(0, 0, 0, 0.1f);
+            yield return new WaitForSeconds(0.05f);
+        }
+        
+
+
+    }
+
     private void Update()
     {
         if(SceneManager.GetActiveScene().name != PlayScene)    //플레이중인 씬과 초기씬이 다르다면
         {
-            gameObject.SetActive(false);
-            state = false;
+             CountAttackDelay();
+
+            //gameObject.SetActive(true);
+            //state = true;
             Instantiate(Player, pos, Quaternion.identity);//위치를 이동시킨다.
             PlayScene = SceneManager.GetActiveScene().name;     //초기씬을 현재씬으로 덮는다.
         }
@@ -59,8 +81,9 @@ public class TPSystem : MonoBehaviour
     {
         pos = Position;
         SceneManager.LoadScene(tp2);        //씬 이동
-        gameObject.SetActive(true);
-        state = true;
+       // gameObject.SetActive(true);
+       // state = true;
+       
     }
 
     
