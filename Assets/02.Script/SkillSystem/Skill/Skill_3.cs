@@ -11,12 +11,16 @@ public class Skill_3 : Skill
     {
         
     }
-    public override void ExcutSkill()
+    public override void ExcutSkill(PlayerState ps, GameObject Character)
     {
+        if (ps.isSkilling)
+        {
+            Debug.Log("IS Skilling");
+            return;
+        }
         if (coolTime > 0)
             return;
-        Debug.Log("Skill 3");
-        coolTime = 20f;
+        StartCoroutine(Excut(ps, Character));
     }
     public override float GetCoolTime()
     {
@@ -35,10 +39,24 @@ public class Skill_3 : Skill
             level++;
         }
     }
+    private IEnumerator Excut(PlayerState ps, GameObject Character)
+    {
+        ps.isSkilling = true;
+        ps.StopHook = true;
+        Debug.Log("Skill 3");
+        //캐릭터 이미지가 보고있는 방향이 반대임
+        //Character.transform.localScale = new Vector3(-Character.transform.localScale.x, 1, 1);
+        ps.SetAnimator(PlayerState.StateAni.Stab);
+        //Debug.Log()
 
-
-
-    // Update is called once per frame
+        yield return new WaitForSeconds(0.2f);
+        //캐릭터 이미지가 보고있는 방향이 반대임
+        //Character.transform.localScale = new Vector3(-Character.transform.localScale.x, 1, 1);
+        coolTime = 0.5f;
+        ps.SetAnimator(PlayerState.StateAni.Idle);
+        ps.isSkilling = false;
+        ps.StopHook = false;
+    }
     void Update()
     {
         if(coolTime > 0)
@@ -51,4 +69,5 @@ public class Skill_3 : Skill
         }
         
     }
+
 }

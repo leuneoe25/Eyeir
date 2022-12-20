@@ -1,7 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
+public class SkillTable
+{
+    public static int GetGoogleSheetGID() { return 522400766; }
+
+    public int ID;
+    public string NPC;
+    public string explanation;
+
+    // 초기화를 원하는 모든 변수를 스트링으로 받는 생성자 필요 ( TableWWW의 GetInstance() 에서 사용 )
+    public SkillTable(string _1, string _2, string _3)
+    {
+        ID = int.Parse(_1);
+        NPC = _2;
+        explanation = _3;
+
+        // bool b    = (int.Parse( 인자 ) == 0) ? false : true;
+        // int n    = int.Parse( 인자 );
+        // float f    = float.Parse(인자);
+        // string s    = 인자;
+        // 정의한 enum eTest
+        // eTest eAt = (eTest)System.Enum.Parse(typeof(eTest), name);
+    }
+}
 public class SkillCommand : MonoBehaviour
 {
     [SerializeField] private Dictionary<int, Skill> skills = new Dictionary<int, Skill>();
@@ -35,16 +59,47 @@ public class SkillCommand : MonoBehaviour
         }
     }
     #endregion
+
+    #region INSPECTOR
+
+    public TableSkill val = null;
+    public Text m_txtLoading = null;
+
+    Dictionary<int, SkillTable> m_mapTb = new Dictionary<int, SkillTable>();
+
+    #endregion
     private void Start()
     {
         skills.Add(0, s_1);
         skills.Add(1, s_2);
         skills.Add(2, s_3);
-    }
 
-    public void ExcutSkill(int index)
+
+        //m_txtLoading.text = "loading";
+
+        val.Req<SkillTable>(SkillTable.GetGoogleSheetGID(), m_mapTb,
+            (a_bSuccess) => // 네트워크 결과 콜백
+            {
+                if (a_bSuccess == true)
+                {
+                    Debug.Log("download finish");
+                }
+                else
+                {
+                    Debug.Log("download error");
+                }
+            }
+        );
+        
+    }
+    private void Update()
     {
-        skills[index].ExcutSkill();
+        //if (m_mapTb[1] != null)
+        //    Debug.Log(m_mapTb[1].ID + " , " + m_mapTb[1].NPC + " , " + m_mapTb[1].explanation);
+    }
+    public void ExcutSkill(int index, PlayerState ps, GameObject Character)
+    {
+        skills[index].ExcutSkill(ps, Character);
     }
     public void GetSkillCoolTime(int index)
     {
