@@ -19,6 +19,7 @@ public class PlayerState : MonoBehaviour
     public bool isIceTile = false;
     private Animator animator;
     private StateAni beforeState = StateAni.Idle;
+    public bool isSkilling = false;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -58,7 +59,8 @@ public class PlayerState : MonoBehaviour
         Run,
         Hooking,
         Slide,
-        jump
+        jump,
+        Stab
 
     }
 }
