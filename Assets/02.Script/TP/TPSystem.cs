@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TPSystem : MonoBehaviour
 {
@@ -30,4 +31,29 @@ public class TPSystem : MonoBehaviour
         }
     }
     #endregion
+    private string nowScene;
+    private string PlayScene;
+    private Vector2 pos;
+    public GameObject Player;
+
+    private void Start()
+    {
+        nowScene = "";  //초기값
+        PlayScene = SceneManager.GetActiveScene().name;
+        Debug.Log("");
+    }
+    private void Update()
+    {
+        if(SceneManager.GetActiveScene().name != PlayScene)    //플레이중인 씬과 초기씬이 다르다면
+        {
+
+            Instantiate(Player, pos, Quaternion.identity);//위치를 이동시킨다.
+            PlayScene = SceneManager.GetActiveScene().name;     //초기씬을 현재씬으로 덮는다.
+        }
+    }
+    public void TP(string tp2, Vector2 Position)
+    {
+        //pos = Position;
+        SceneManager.LoadScene(tp2);        //씬 이동
+    }
 }
