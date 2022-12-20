@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Wall
   - Ground
-  - Spon
+  - Spawn
   layers:
   - Default
   - TransparentFX
@@ -17,7 +17,7 @@ TagManager:
   - 
   - Wall
   - Ground
-  - MAP
+  - Spawn
   - 
   - 
   - 
@@ -43,4 +43,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: collision
+    uniqueID: 4112691369
     locked: 0
