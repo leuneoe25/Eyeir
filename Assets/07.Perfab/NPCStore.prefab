@@ -1375,7 +1375,7 @@ GameObject:
   - component: {fileID: 8298691370511328191}
   - component: {fileID: 8298691370511328180}
   m_Layer: 0
-  m_Name: NPC
+  m_Name: NPCStore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
