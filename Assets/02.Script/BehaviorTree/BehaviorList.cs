@@ -19,6 +19,8 @@ public class BehaviorList : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (state.isStop)
+            return;
         if(NowBehavior == null)
         {
             if(nodes.Count == 0)

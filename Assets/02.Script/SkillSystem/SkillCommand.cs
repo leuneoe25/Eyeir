@@ -62,7 +62,7 @@ public class SkillCommand : MonoBehaviour
 
     #region INSPECTOR
 
-    public TableSkill val = null;
+    public TableSheet val = null;
     public Text m_txtLoading = null;
     public List<Sprite> SkillIcon = new List<Sprite>();
 
@@ -70,6 +70,7 @@ public class SkillCommand : MonoBehaviour
 
     #endregion
     [SerializeField] private GameObject StabEffect;
+    [SerializeField] private GameObject CutEffect;
     private void Start()
     {
         skills.Add(0, s_1);
@@ -92,7 +93,7 @@ public class SkillCommand : MonoBehaviour
                 }
             }
         );
-        
+
     }
     private void Update()
     {
@@ -103,6 +104,8 @@ public class SkillCommand : MonoBehaviour
     {
         if (index == 0)
             Effect = StabEffect;
+        if (index == 1)
+            Effect = CutEffect;
         skills[index].ExcutSkill(ps, Character, Effect);
     }
     public string GetName(int index)

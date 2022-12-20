@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TableSkill : MonoBehaviour
+public class TableSheet: MonoBehaviour
 {
     const string TableKey = @"17LZkvq7BV2O5fVT3wS-rQOJfeZ-O2iPGzBwKJz7LJjo";
     const string strURLBase = @"http://spreadsheets.google.com/a/google.com/tq?key={0}&gid={1}";
@@ -60,6 +60,7 @@ public class TableSkill : MonoBehaviour
             for (int i = 0; i < liName.Count; ++i)
             {
                 var m1 = (Dictionary<string, object>)liName[i];
+                
                 liValueName.Add((string)m1["label"]);
             }
 

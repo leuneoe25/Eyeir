@@ -5,32 +5,6 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class TPSystem : MonoBehaviour
 {
-    #region Singleton
-    //private static TPSystem instance = null;
-    //void Awake()
-    //{
-    //    if (null == instance)
-    //    {
-    //        instance = this;
-    //        DontDestroyOnLoad(this.gameObject);
-    //    }
-    //    else
-    //    {
-    //        Destroy(this.gameObject);
-    //    }
-    //}
-    //public static TPSystem Instance
-    //{
-    //    get
-    //    {
-    //        if (null == instance)
-    //        {
-    //            return null;
-    //        }
-    //        return instance;
-    //    }
-    //}
-    #endregion
     [SerializeField] private Image Pade;
 
     private void Start()
@@ -64,26 +38,10 @@ public class TPSystem : MonoBehaviour
         Pade.gameObject.SetActive(false);
     }
 
-    private void Update()
-    {
-        //if(SceneManager.GetActiveScene().name != PlayScene)    //플레이중인 씬과 초기씬이 다르다면
-        //{
-        //    Debug.Log("a");
-             
-
-        //    //gameObject.SetActive(true);
-        //    //state = true;
-        //    Instantiate(Player, pos, Quaternion.identity);//위치를 이동시킨다.
-        //    PlayScene = SceneManager.GetActiveScene().name;     //초기씬을 현재씬으로 덮는다.
-        //}
-    }
     public void TP(GameObject Player, Vector2 Position)
     {
         
         StartCoroutine(PadeIn(Player, Position));
-             //씬 이동
-       // gameObject.SetActive(true);
-       // state = true;
        
     }
 

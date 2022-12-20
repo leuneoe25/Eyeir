@@ -12,6 +12,7 @@ public class PlayerState : MonoBehaviour
     public bool isGround = false;
     public float WallWalkPosX = 0f;
     public bool isJumping = false;
+    public bool isStop = false;
 
     public int PlayerHp = 3;
     public int nowSkill = -1;
@@ -60,7 +61,8 @@ public class PlayerState : MonoBehaviour
         Hooking,
         Slide,
         jump,
-        Stab
+        Stab,
+        Cut
 
     }
 }
