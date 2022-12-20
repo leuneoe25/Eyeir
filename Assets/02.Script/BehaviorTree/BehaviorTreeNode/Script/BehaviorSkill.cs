@@ -23,6 +23,7 @@ public class BehaviorSkill : BehaviorNode
         if (ps.nowSkill == -1)
             return false;
 
+        rigidbody.velocity = new Vector2(0,0);
         SkillCommand.Instance.ExcutSkill(ps.nowSkill,ps, Character);
         ps.nowSkill = -1;
 

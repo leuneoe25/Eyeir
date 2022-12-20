@@ -11,6 +11,8 @@ public class BehaviorMove : BehaviorNode
         //    return false;
         if (ps.isWallWalk)
             return false;
+        if (ps.isSkilling)
+            return false;
 
 
         if (!ps.isGround)
