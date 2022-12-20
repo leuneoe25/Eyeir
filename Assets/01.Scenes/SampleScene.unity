@@ -988,6 +988,7 @@ GameObject:
   - component: {fileID: 996499296}
   - component: {fileID: 996499295}
   - component: {fileID: 996499294}
+  - component: {fileID: 996499293}
   m_Layer: 0
   m_Name: SkillManager
   m_TagString: Untagged
@@ -1009,6 +1010,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &996499293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996499291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ff1d15626403e0409389de314d5059a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &996499294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1051,7 +1064,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damage: 0
   level: 1
-  isSkilling: 0
 --- !u!114 &996499297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1067,6 +1079,8 @@ MonoBehaviour:
   s_1: {fileID: 996499296}
   s_2: {fileID: 996499295}
   s_3: {fileID: 996499294}
+  val: {fileID: 996499293}
+  m_txtLoading: {fileID: 0}
 --- !u!1 &1011317408
 GameObject:
   m_ObjectHideFlags: 0
