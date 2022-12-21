@@ -5,12 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class GameStart : MonoBehaviour
 {
-    // Update is called once per frame
-    void Update()
+    public void Game_s()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            SceneManager.LoadScene("SampleScene");
-        }
+        Debug.Log("start");
+        SceneManager.LoadScene("SampleScene");
+    }
+    public void Game_e()
+    {
+        Debug.Log("end");
+        Application.Quit();
     }
 }
