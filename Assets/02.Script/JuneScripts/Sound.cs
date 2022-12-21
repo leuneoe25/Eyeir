@@ -21,4 +21,17 @@ public class Sound : MonoBehaviour
     {
         SFXsource.volume = SFXSource.value;
     }
+
+    public static Sound Instance;
+
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
 }
