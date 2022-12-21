@@ -29,6 +29,11 @@ public class BoxManager : ItemManager
     {
         int I = Random.RandomRange(0, 8);
         ItemManager.Instance.AddItem((ItemName)I);
+        int c = Random.RandomRange(20, 31);
+
+        if (ItemManager.Instance.moreCoin)
+            c += 10;
+        ItemManager.Instance.Coin += c;
         #region rin
         //if (I == 0)
         //{

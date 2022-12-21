@@ -10,6 +10,6 @@ public abstract class Skill : MonoBehaviour
     public abstract int GetSkillLevel();
     public abstract float GetCoolTime();
 
+    public abstract float GetDamage();
 
-    
 }

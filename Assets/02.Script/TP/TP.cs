@@ -17,7 +17,6 @@ public class TP : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Z)&& stay)   //만약 목적지에서 z를 누르면
         {
-            Debug.Log("눌림");
             Map.SetActive(true);
             system.TP(Player, tp1.transform.position);    //다음씬으로 이동
         }

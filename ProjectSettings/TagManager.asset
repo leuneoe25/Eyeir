@@ -7,6 +7,9 @@ TagManager:
   - Wall
   - Ground
   - Spawn
+  - Skill
+  - Enemy
+  - Trap
   layers:
   - Default
   - TransparentFX
@@ -18,9 +21,9 @@ TagManager:
   - Wall
   - Ground
   - Spawn
-  - 
-  - 
-  - 
+  - Enemy
+  - Player
+  - saaaaa
   - 
   - 
   - 

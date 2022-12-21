@@ -6,7 +6,9 @@ public class Skill_2 : Skill
 {
     [SerializeField] private float Damage;
     [SerializeField] private int level;
-    private float coolTime;
+    private float coolTime = 0;
+    public float MaxCoolTime = 0.5f;
+
     void Start()
     {
         
@@ -20,11 +22,11 @@ public class Skill_2 : Skill
         }
         if (coolTime > 0)
             return;
-        StartCoroutine(Excut(ps, Character));
+        StartCoroutine(Excut(ps, Character, Effect));
     }
     public override float GetCoolTime()
     {
-        return coolTime;
+        return coolTime / MaxCoolTime;
     }
 
     public override int GetSkillLevel()
@@ -38,19 +40,31 @@ public class Skill_2 : Skill
             return;
         level++;
     }
-    private IEnumerator Excut(PlayerState ps, GameObject Character)
+    public override float GetDamage()
+    {
+        return Damage;
+    }
+
+    private IEnumerator Excut(PlayerState ps, GameObject Character, GameObject Effect)
     {
         ps.isSkilling = true;
         ps.StopHook = true;
         Debug.Log("Skill 2");
         //캐릭터 이미지가 보고있는 방향이 반대임
-        //Character.transform.localScale = new Vector3(-Character.transform.localScale.x, 1, 1);
-        ps.SetAnimator(PlayerState.StateAni.Stab);
-        //Debug.Log()
-
-        yield return new WaitForSeconds(0.2f);
-        //캐릭터 이미지가 보고있는 방향이 반대임
-        //Character.transform.localScale = new Vector3(-Character.transform.localScale.x, 1, 1);
+        ps.SetAnimator(PlayerState.StateAni.Cut);
+        Effect.SetActive(true);
+        if (Character.transform.localScale.x > 0)
+        {
+            Effect.transform.position = new Vector2(Character.transform.position.x - 5, Character.transform.position.y);
+            Effect.transform.localScale = new Vector3(1, 1, 1);
+        }
+        else
+        {
+            Effect.transform.position = new Vector2(Character.transform.position.x + 5, Character.transform.position.y);
+            Effect.transform.localScale = new Vector3(-1, 1, 1);
+        }
+        yield return new WaitForSeconds(0.3f);
+        Effect.SetActive(false);
         coolTime = 0.5f;
         ps.SetAnimator(PlayerState.StateAni.Idle);
         ps.isSkilling = false;

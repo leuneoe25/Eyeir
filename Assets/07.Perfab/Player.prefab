@@ -5034,11 +5034,15 @@ MonoBehaviour:
   isGround: 0
   WallWalkPosX: -1
   isJumping: 0
+  isStop: 0
   PlayerHp: 3
   nowSkill: 0
   StopHook: 0
   isIceTile: 0
   isSkilling: 0
+  Hp: []
+  impulseSource: {fileID: 0}
+  DamagePade: {fileID: 0}
 --- !u!114 &7178128163661962924
 MonoBehaviour:
   m_ObjectHideFlags: 0
