@@ -90,9 +90,9 @@ public class SkillCommand : MonoBehaviour
     private int SkillCount = 0;
     private void Start()
     {
-        AddSkill(1);
+        //AddSkill(1);
         AddSkill(0);
-        AddSkill(2);
+        //AddSkill(2);
 
 
         //m_txtLoading.text = "loading";
@@ -172,6 +172,10 @@ public class SkillCommand : MonoBehaviour
     {
         return m_mapTb[index + 1].Name;
     }
+    public bool GetSkillContains(int index)
+    {
+        return skills.ContainsKey(index);
+    }
     public string GetExplanation(int index)
     {
         return m_mapTb[index + 1].explanation;
@@ -182,11 +186,18 @@ public class SkillCommand : MonoBehaviour
     }
     public int GetSkillLevel(int index)
     {
-        return skills[index].GetSkillLevel();
+        if (GetSkillContains(index))
+            return skills[index].GetSkillLevel();
+        else
+            return 0;
     }
     public void SkillLevelUp(int index)
     {
-        skills[index].SkillLevelUp();
+        if (GetSkillContains(index))
+            skills[index].SkillLevelUp();
+        else
+            AddSkill(index);
+        SkillUIImage();
     }
     public Sprite GetSkillIcon(int index)
     {
@@ -197,5 +208,11 @@ public class SkillCommand : MonoBehaviour
         if (GetSkillLevel(index) > 1)
             return m_mapTb[index+1].UpgradeDamage;
         return m_mapTb[index+1].Damage;
+    }
+    public int Buy(int index)
+    {
+        if (GetSkillContains(index))
+            return m_mapTb[index + 1].ButPrice;
+        return m_mapTb[index + 1].Buy;
     }
 }

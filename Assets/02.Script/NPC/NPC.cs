@@ -34,7 +34,7 @@ public class NPC : MonoBehaviour
             OnScript = true;
             ScriptCount = 0;
             Player.GetComponent<PlayerState>().isStop = true;
-            Vector3 v = Camera.main.WorldToScreenPoint(new Vector3( gameObject.transform.position.x + 5, gameObject.transform.position.y + 5));
+            Vector3 v = Camera.main.WorldToScreenPoint(new Vector3( gameObject.transform.position.x + 10, gameObject.transform.position.y + 10));
             image.transform.position = v;
 
 

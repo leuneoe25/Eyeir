@@ -12,6 +12,7 @@ public class Smithy : MonoBehaviour
     [SerializeField] private GameObject StoreUICheck;
     [SerializeField] private Button StoreUICheckYes;
     [SerializeField] private Button StoreUICheckNo;
+    [SerializeField] private Text CheckText;
     private GameObject Player;
     [Header("Slot")]
     [SerializeField] private GameObject[] Slots;
@@ -69,9 +70,9 @@ public class Smithy : MonoBehaviour
             g.SetActive(true);
             EventTrigger eventTrigger = Slots[i].AddComponent<EventTrigger>();
             //설명
-            //g.transform.GetChild(0).GetComponent<Image>().sprite = SkillCommand.Instance.GetSkillIcon(i);
+            g.transform.GetChild(0).GetComponent<Image>().sprite = SkillCommand.Instance.GetSkillIcon(i);
             g.transform.GetChild(1).GetComponent<Text>().text = SkillCommand.Instance.GetName(i); ;
-            g.transform.GetChild(2).GetComponent<Text>().text = "설명";
+            g.transform.GetChild(2).GetComponent<Text>().text = SkillCommand.Instance.GetExplanation(i);
             g.transform.GetChild(3).gameObject.SetActive(false);
             if (SkillCommand.Instance.GetSkillLevel(i) == 2)
             {
@@ -130,15 +131,36 @@ public class Smithy : MonoBehaviour
     //상품 클릭
     private void OnPointerClick(GameObject g)
     {
+        //선택
+        Select = int.Parse(g.name) - 1;
+        Debug.Log(SkillCommand.Instance.GetSkillContains(Select));
+        if (SkillCommand.Instance.GetSkillContains(Select))
+        {
+            CheckText.text = "스킬을 업그레이드 하시겠습니끼?";
+        }
+        else
+        {
+            
+            CheckText.text = "스킬을 구매 하시겠습니끼?";
+        }
+        if (SkillCommand.Instance.Buy(Select) > GoodsSystem.Instance.GetCoin())
+        {
+            StoreUICheck.SetActive(true);
+            CheckText.text = "재화가 부족합니다";
+            StoreUICheckYes.gameObject.SetActive(false);
+            StoreUICheckNo.onClick.RemoveAllListeners();
+            StoreUICheckNo.onClick.AddListener(StoreUICheckNoFunc);
+            return;
+        }
         //효과음 + 크기 변경
         StoreUICheck.SetActive(true);
+        StoreUICheckYes.gameObject.SetActive(true);
         StoreUICheckYes.onClick.RemoveAllListeners();
         StoreUICheckYes.onClick.AddListener(StoreUICheckYesFunc);
         StoreUICheckNo.onClick.RemoveAllListeners();
         StoreUICheckNo.onClick.AddListener(StoreUICheckNoFunc);
 
-        //선택
-        Select = int.Parse(g.name);
+        
     }
     private void StoreUICheckYesFunc()
     {
@@ -151,9 +173,12 @@ public class Smithy : MonoBehaviour
     }
     private void BuyProduct()
     {
+        GoodsSystem.Instance.AddCoin(-SkillCommand.Instance.Buy(Select));
+        Debug.Log("Upgrade " + Select + "  " + SkillCommand.Instance.GetSkillLevel(Select));
         //재화 소모
-        Debug.Log("Upgrade " + Select+ "  "+ SkillCommand.Instance.GetSkillLevel(Select-1));
-        SkillCommand.Instance.SkillLevelUp(Select - 1);
+        SkillCommand.Instance.SkillLevelUp(Select);
+
+
         OnStore();
     }
     private void OffStore()

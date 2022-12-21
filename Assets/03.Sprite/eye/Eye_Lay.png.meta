@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 19028f155c6d1a44d946a40a6b1d1a6e
+guid: 6d494516bfeaa234f8f7fb060b73644d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2612008862707153668
-    second: SmallEye_Side_0
+      213: -1366237177119672417
+    second: Eye_Lay_0
+  - first:
+      213: 1774500854216352996
+    second: Eye_Lay_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SmallEye_Side_0
+      name: Eye_Lay_0
       rect:
         serializedVersion: 2
-        x: 415
-        y: 433
-        width: 180
-        height: 131
+        x: 354
+        y: 24
+        width: 126
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,8 +123,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40bf4dbb838bf3420800000000000000
-      internalID: 2612008862707153668
+      spriteID: f9779daa6862a0de0800000000000000
+      internalID: -1366237177119672417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye_Lay_1
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 24
+        width: 96
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e4613d002b40a810800000000000000
+      internalID: 1774500854216352996
       vertices: []
       indices: 
       edges: []
