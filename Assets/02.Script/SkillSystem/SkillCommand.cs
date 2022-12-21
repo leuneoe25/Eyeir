@@ -146,10 +146,10 @@ public class SkillCommand : MonoBehaviour
                 skills.Add(2, s_3);
                 break;
         }
-        //SkillImageFrame[SkillCount].transform.GetChild(1).GetComponent<Image>().sprite = SkillIcon[index];
-        //SkillImageFrame[SkillCount].transform.GetChild(0).GetComponent<Image>().sprite = SkillIcon[index];
-        SkillImageFrame[SkillCount].transform.GetChild(1).GetComponent<Image>().sprite = SkillIcon[0];
-        SkillImageFrame[SkillCount].transform.GetChild(0).GetComponent<Image>().sprite = SkillIcon[0];
+        SkillImageFrame[SkillCount].transform.GetChild(1).GetComponent<Image>().sprite = SkillIcon[index];
+        SkillImageFrame[SkillCount].transform.GetChild(0).GetComponent<Image>().sprite = SkillIcon[index];
+        //SkillImageFrame[SkillCount].transform.GetChild(1).GetComponent<Image>().sprite = SkillIcon[0];
+        //SkillImageFrame[SkillCount].transform.GetChild(0).GetComponent<Image>().sprite = SkillIcon[0];
         Skillindex[SkillCount] = index;
         SkillCount++;
     }
