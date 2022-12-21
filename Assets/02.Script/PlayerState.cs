@@ -27,6 +27,7 @@ public class PlayerState : MonoBehaviour
     public GameObject[] Hp;
     public CinemachineImpulseSource impulseSource;
     public Image DamagePade;
+    private bool isdelay = false;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -83,9 +84,11 @@ public class PlayerState : MonoBehaviour
     }
     public void Damaged()
     {
-        if (!ItemManager.Instance.Usedefense())
+        
+        if (!ItemManager.Instance.Usedefense() && !isdelay)
         {
-            NowHp--;
+            Debug.Log("dddd");
+            NowHp -= 1;
             impulseSource.GenerateImpulse(0.7f);
             if (NowHp==0)
             {
@@ -182,9 +185,9 @@ public class PlayerState : MonoBehaviour
     }
     IEnumerator delay()
     {
-        gameObject.layer = 12;
-        yield return new WaitForSeconds(1f);
-        gameObject.layer = 11;
+        isdelay = true;
+        yield return new WaitForSeconds(3f);
+        isdelay = false;
     }
     
 }

@@ -23,6 +23,7 @@ public class Bullet_Move : MonoBehaviour
         
         if(collision.transform.CompareTag("Player"))
         {
+            collision.GetComponent<PlayerState>().Damaged();
             return;
         }
         if (collision.transform.CompareTag("Ground") || collision.transform.CompareTag("Wall"))

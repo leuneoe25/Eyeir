@@ -12,6 +12,7 @@ public class SnowBoss : Boss
     private bool StartPattern = true;
     [Header("Pattern 1")]
     [SerializeField] private GameObject[] AttackArea_1;
+    [SerializeField] private GameObject[] Attack_1;
     
 
     Coroutine nowPattern = null;
@@ -227,6 +228,9 @@ public class SnowBoss : Boss
             AttackArea_1[i].SetActive(true);
             yield return new WaitForSeconds(2f);
             AttackArea_1[i].SetActive(false);
+            Attack_1[i].SetActive(true);
+            yield return new WaitForSeconds(1f);
+            Attack_1[i].SetActive(false);
             //°ø°Ý ÈÄ 
             yield return new WaitForSeconds(0.5f);
         }

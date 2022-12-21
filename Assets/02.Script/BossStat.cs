@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,15 +12,17 @@ public class BossStat : MonoBehaviour
     [SerializeField] private Text BossName;
     [SerializeField] private Image BossHpbar;
     [SerializeField] private GameObject BossCanvers;
-
+    public CinemachineImpulseSource impulseSource;
     private float NowHp;
     public bool BossPattern = false;
 
+    [SerializeField] private GameObject TP;
     public GameObject Player;
     void Start()
     {
         NowHp = BossHp;
         BossName.text = "´«ÀÇ ¿©¿Õ";
+        TP.SetActive(false);
     }
 
     // Update is called once per frame
@@ -33,6 +36,7 @@ public class BossStat : MonoBehaviour
     }
     void Attcked(int Damage)
     {
+        impulseSource.GenerateImpulse(0.7f);
         NowHp -= Damage;
         if(NowHp <=0)
         {
@@ -49,6 +53,7 @@ public class BossStat : MonoBehaviour
         {
             BossPattern = true;
             BossCanvers.SetActive(true);
+            TP.SetActive(false);
             Player = collision.gameObject;
         }
         if(collision.transform.CompareTag("Skill"))
@@ -59,11 +64,15 @@ public class BossStat : MonoBehaviour
     }
     IEnumerator Die()
     {
+        BossCanvers.SetActive(false);
+        TP.SetActive(true);
+        TP.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
         boss.Clear();
         float Speed = 20f;
         float y = gameObject.transform.position.y;
         while ((y - 100) < gameObject.transform.position.y)
         {
+            TP.GetComponent<SpriteRenderer>().color+= new Color(0, 0, 0, 0.1f);
             gameObject.transform.position += Vector3.down * Speed * Time.deltaTime;
             yield return new WaitForSeconds(0.01f);
         }
