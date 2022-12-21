@@ -7,6 +7,7 @@ public class Skill_1 : Skill
     [SerializeField] private float Damage;
     [SerializeField] private int level;
     private float coolTime = 0;
+    public float MaxCoolTime = 0.5f;
     void Start()
     {
 
@@ -26,7 +27,7 @@ public class Skill_1 : Skill
 
     public override float GetCoolTime()
     {
-        return coolTime;
+        return coolTime / MaxCoolTime;
     }
 
     public override int GetSkillLevel()
@@ -82,5 +83,10 @@ public class Skill_1 : Skill
         {
             coolTime = 0;
         }
+    }
+
+    public override float GetDamage()
+    {
+        return Damage;
     }
 }

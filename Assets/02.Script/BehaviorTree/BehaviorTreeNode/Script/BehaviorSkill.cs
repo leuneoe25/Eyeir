@@ -9,9 +9,11 @@ public class BehaviorSkill : BehaviorNode
     {
         if (ps.isSkilling)
         {
-            Debug.Log("ing");
+            //Debug.Log("ing");
             return true;
         }
+        if (ps.nowSkill == -1)
+            return false;
         if (ps.Rope)
             return false;
         if (ps.isWallWalk)
@@ -20,8 +22,7 @@ public class BehaviorSkill : BehaviorNode
             return false;
         if (!ps.isGround)
             return false;
-        if (ps.nowSkill == -1)
-            return false;
+        
 
         rigidbody.velocity = new Vector2(0,0);
         SkillCommand.Instance.ExcutSkill(ps.nowSkill,ps, Character);

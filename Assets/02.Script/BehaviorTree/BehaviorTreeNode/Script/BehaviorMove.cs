@@ -92,11 +92,11 @@ public class BehaviorMove : BehaviorNode
         {
             
             if (x != 0)
-                rigidbody.velocity = new Vector2(x * ps.Speed, rigidbody.velocity.y);
+                rigidbody.velocity = new Vector2(x * (ps.Speed + ItemManager.Instance.GetSpeed()), rigidbody.velocity.y);
         }
         else
         {
-            rigidbody.velocity = new Vector2(x * ps.Speed, rigidbody.velocity.y);
+            rigidbody.velocity = new Vector2(x * (ps.Speed+ItemManager.Instance.GetSpeed()), rigidbody.velocity.y);
         }
         
         //Ani

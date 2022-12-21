@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class TPSystem : MonoBehaviour
 {
     [SerializeField] private Image Pade;
+    private bool ising = false;
 
     private void Start()
     {
@@ -13,6 +14,7 @@ public class TPSystem : MonoBehaviour
 
     IEnumerator PadeIn(GameObject Player, Vector2 Position)
     {
+        ising = true;
         Pade.gameObject.SetActive(true);
         Pade.color = new Color(0, 0, 0, 0);
 
@@ -36,11 +38,13 @@ public class TPSystem : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
         }
         Pade.gameObject.SetActive(false);
+        ising = false;
     }
 
     public void TP(GameObject Player, Vector2 Position)
     {
-        
+        if (ising)
+            return;
         StartCoroutine(PadeIn(Player, Position));
        
     }

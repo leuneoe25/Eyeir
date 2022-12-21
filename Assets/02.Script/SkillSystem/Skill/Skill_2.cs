@@ -6,7 +6,9 @@ public class Skill_2 : Skill
 {
     [SerializeField] private float Damage;
     [SerializeField] private int level;
-    private float coolTime;
+    private float coolTime = 0;
+    public float MaxCoolTime = 0.5f;
+
     void Start()
     {
         
@@ -24,7 +26,7 @@ public class Skill_2 : Skill
     }
     public override float GetCoolTime()
     {
-        return coolTime;
+        return coolTime / MaxCoolTime;
     }
 
     public override int GetSkillLevel()
@@ -38,6 +40,11 @@ public class Skill_2 : Skill
             return;
         level++;
     }
+    public override float GetDamage()
+    {
+        return Damage;
+    }
+
     private IEnumerator Excut(PlayerState ps, GameObject Character, GameObject Effect)
     {
         ps.isSkilling = true;
