@@ -114,16 +114,13 @@ public class ItemManager : MonoBehaviour
             }
         );
 
-        AddItem(ItemName.BrokenMirror);
-        AddItem(ItemName.Eyecrystal);
-        AddItem(ItemName.BrokenMirror);
-        AddItem(ItemName.BrokenMirror);
-        AddItem(ItemName.BrokenMirror);
-        
-        if(Inventory.Count > 0)
-        {
-            UISet();
-        }
+        //AddItem(ItemName.BrokenMirror);
+        //AddItem(ItemName.Eyecrystal);
+        //AddItem(ItemName.BrokenMirror);
+        //AddItem(ItemName.BrokenMirror);
+        //AddItem(ItemName.BrokenMirror);
+
+        UISet();
         moreButton.onClick.AddListener(moreFunc);
 
     }
@@ -136,7 +133,6 @@ public class ItemManager : MonoBehaviour
         if(Traptime>0)
         {
             DTrap = true;
-            Debug.Log(Traptime);
             Traptime -= Time.deltaTime;
         }
         else if(DTrap)
@@ -192,8 +188,8 @@ public class ItemManager : MonoBehaviour
     private void OnPointerEnter(int index)
     {
         Vector3 mos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 v = Camera.main.WorldToScreenPoint(new Vector3(mos.x + 5, mos.y + 5));
-        exp.transform.position = new Vector3(mos.x-9, mos.y + 5);
+        Vector3 v = Camera.main.WorldToScreenPoint(new Vector3(mos.x + 10, mos.y + 20));
+        exp.transform.position = new Vector3(mos.x-10, mos.y + 10);
         exp.SetActive(true);
         exp.transform.GetChild(0).GetComponent<Text>().text = m_mapTb[index + 1].Name;
         exp.transform.GetChild(1).GetComponent<Text>().text = m_mapTb[index + 1].explanation;
