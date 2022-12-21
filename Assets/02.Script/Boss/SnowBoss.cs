@@ -65,10 +65,6 @@ public class SnowBoss : Boss
             }
             RandomPattern();
         }
-        if(Input.GetKeyDown(KeyCode.I))
-        {
-            shot();
-        }
     }
     private void RandomPattern()
     {
@@ -249,12 +245,13 @@ public class SnowBoss : Boss
         rot = 145;
         shot();
 
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(5f);
         isPattern = false;
     }
     IEnumerator Pattern_3()
     {
         isPattern = true;
+        //경고 만들기
         Targetshot();
         yield return new WaitForSeconds(3f);
         isPattern = false;

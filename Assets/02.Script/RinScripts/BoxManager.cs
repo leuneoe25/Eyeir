@@ -33,7 +33,7 @@ public class BoxManager : ItemManager
 
         if (ItemManager.Instance.moreCoin)
             c += 10;
-        ItemManager.Instance.Coin += c;
+        GoodsSystem.Instance.AddCoin(c);
         #region rin
         //if (I == 0)
         //{

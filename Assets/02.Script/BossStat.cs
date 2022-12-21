@@ -8,6 +8,7 @@ public class BossStat : MonoBehaviour
 {
     [SerializeField] private float BossHp;
     [SerializeField] private Boss boss;
+    [SerializeField] private string name;
     [Header("UI")]
     [SerializeField] private Text BossName;
     [SerializeField] private Image BossHpbar;
@@ -15,14 +16,13 @@ public class BossStat : MonoBehaviour
     public CinemachineImpulseSource impulseSource;
     private float NowHp;
     public bool BossPattern = false;
+    private bool isDie = false;
 
     [SerializeField] private GameObject TP;
     public GameObject Player;
     void Start()
     {
-        NowHp = BossHp;
-        BossName.text = "´«ÀÇ ¿©¿Õ";
-        TP.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -42,6 +42,7 @@ public class BossStat : MonoBehaviour
         {
             Debug.Log("Die");
             BossPattern = false;
+
             StopAllCoroutines();
             StartCoroutine(Die());
         }
@@ -53,6 +54,8 @@ public class BossStat : MonoBehaviour
         {
             BossPattern = true;
             BossCanvers.SetActive(true);
+            NowHp = BossHp;
+            BossName.text = name;
             TP.SetActive(false);
             Player = collision.gameObject;
         }

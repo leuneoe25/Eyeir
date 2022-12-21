@@ -14,7 +14,7 @@ public class ItemTable
     public string explanation;
     public string box;
     public string store;
-    public string price;
+    public int price;
     // 초기화를 원하는 모든 변수를 스트링으로 받는 생성자 필요 ( TableWWW의 GetInstance() 에서 사용 )
     public ItemTable(string _0, string _1, string _2, string _3, string _4, string _5)
     {
@@ -23,7 +23,7 @@ public class ItemTable
         explanation = _2;
         box = _3;
         store = _4;
-        price = _5;
+        price = int.Parse(_5);
         // bool b    = (int.Parse( 인자 ) == 0) ? false : true;
         // int n    = int.Parse( 인자 );
         // float f    = float.Parse(인자);
@@ -83,8 +83,6 @@ public class ItemManager : MonoBehaviour
     public List<Item> Inventory = new List<Item>();
     public List<Sprite> ItemImage = new List<Sprite>();
     private ItemSystem ItemSystem = new ItemSystem();
-
-    public int Coin = 0;
     [Header("UI")]
     [SerializeField] private Image[] images_4;
     [SerializeField] private GameObject exp;
@@ -155,7 +153,7 @@ public class ItemManager : MonoBehaviour
     }
     public void UISet()
     {
-        t_Coin.text = Coin.ToString();
+        t_Coin.text = GoodsSystem.Instance.GetCoin().ToString();
         for (int i= 0;i<4;i++)
         {
             if(Inventory.Count <= i)
@@ -164,7 +162,7 @@ public class ItemManager : MonoBehaviour
                 continue;
             }
             images_4[i].gameObject.SetActive(true);
-            //images_4[i].sprite = ItemImage[(int)Inventory[i].GetName()];
+            images_4[i].sprite = ItemImage[(int)Inventory[i].GetName()];
             EventTrigger eventTrigger = images_4[i].gameObject.AddComponent<EventTrigger>();
             //설명
             //g.transform.GetChild(0).GetComponent<Image>().sprite = ItemManager.Instance.GetItemSprite(Product[i].GetName());
@@ -216,6 +214,7 @@ public class ItemManager : MonoBehaviour
                 images_16[i].gameObject.SetActive(false);
                 continue;
             }
+            images_16[i].sprite = ItemImage[(int)Inventory[index].GetName()];
             images_16[i].gameObject.SetActive(true);
             EventTrigger eventTrigger = images_16[i].gameObject.AddComponent<EventTrigger>();
             int _in = index;
@@ -297,6 +296,7 @@ public class ItemManager : MonoBehaviour
             {
                 Debug.Log( i + " : "+Inventory[i].GetName().ToString());
             }
+        UISet();
         //}
         //else
         //{
@@ -346,6 +346,10 @@ public class ItemManager : MonoBehaviour
             }
         }
         return count;
+    }
+    public int Getprice(ItemName item)
+    {
+        return m_mapTb[((int)item + 1)].price;
     }
 
 public interface Item

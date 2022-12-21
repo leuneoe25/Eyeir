@@ -80,7 +80,6 @@ public class BehaviorMove : BehaviorNode
         //move
         float x = Input.GetAxisRaw("Horizontal");
         TransformX(x, Character);
-
         if (ps.Rope)
             return false;
 

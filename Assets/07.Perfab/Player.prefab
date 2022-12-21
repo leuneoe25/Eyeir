@@ -4891,7 +4891,6 @@ GameObject:
   - component: {fileID: 7178128163661962922}
   - component: {fileID: 7178128163661962899}
   - component: {fileID: 7178128163661962924}
-  - component: {fileID: 7178128163661962926}
   - component: {fileID: 7178128163661962925}
   m_Layer: 0
   m_Name: Player
@@ -4954,8 +4953,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1814066583
+  m_SortingLayer: 2
   m_SortingOrder: 50
   m_Sprite: {fileID: -3842353275482561300, guid: bd7a5fa4a6d131240806b272da110e34, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5036,12 +5035,23 @@ MonoBehaviour:
   isJumping: 0
   isStop: 0
   PlayerHp: 3
-  nowSkill: 0
+  nowSkill: -1
   StopHook: 0
   isIceTile: 0
   isSkilling: 0
-  Hp: []
-  impulseSource: {fileID: 0}
+  Hp:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  impulseSource: {fileID: 6494411402863260828}
   DamagePade: {fileID: 0}
 --- !u!114 &7178128163661962924
 MonoBehaviour:
@@ -5063,25 +5073,6 @@ MonoBehaviour:
   state: {fileID: 7178128163661962899}
   rigidbody: {fileID: 7178128163661962922}
   Player: {fileID: 7178128163661962923}
---- !u!232 &7178128163661962926
-DistanceJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7178128163661962923}
-  m_Enabled: 0
-  serializedVersion: 4
-  m_EnableCollision: 1
-  m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 0
-  m_Distance: 6.1546082
-  m_MaxDistanceOnly: 0
 --- !u!95 &7178128163661962925
 Animator:
   serializedVersion: 3

@@ -51,5 +51,6 @@ public class GoodsSystem : MonoBehaviour
     public void AddCoin(int add)
     {
         Coin += add;
+        ItemManager.Instance.UISet();
     }
 }
