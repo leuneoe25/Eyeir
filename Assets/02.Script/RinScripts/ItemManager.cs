@@ -183,6 +183,11 @@ public class ItemManager : MonoBehaviour
             eventTrigger.triggers.Add(entry_Drag);
         }
     }
+    public void Clear()
+    {
+        Inventory.Clear();
+        UISet();
+    }
     private void OnPointerEnter(int index)
     {
         Vector3 mos = Camera.main.ScreenToWorldPoint(Input.mousePosition);

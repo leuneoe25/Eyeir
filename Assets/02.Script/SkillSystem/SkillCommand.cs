@@ -222,5 +222,6 @@ public class SkillCommand : MonoBehaviour
         s_1.Clear();
         s_2.Clear();
         s_3.Clear();
+        SkillUIImage();
     }
 }

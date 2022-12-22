@@ -94,6 +94,7 @@ public class PlayerState : MonoBehaviour
             {
                 SkillCommand.Instance.SkillClear();
                 GoodsSystem.Instance.Clear();
+                GoodsSystem.Instance.Clear();
               Debug.Log("DIE");
             }
             StartCoroutine(DamagePadeIn());

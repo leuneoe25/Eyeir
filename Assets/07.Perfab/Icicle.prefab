@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 1822297666327969962}
   - component: {fileID: 1822297666327969961}
   - component: {fileID: 1822297666327969960}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Icicle
-  m_TagString: Trap
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
