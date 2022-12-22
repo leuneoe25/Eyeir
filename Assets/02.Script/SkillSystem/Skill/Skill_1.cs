@@ -89,4 +89,10 @@ public class Skill_1 : Skill
     {
         return Damage;
     }
+
+    public override void Clear()
+    {
+        level = 1;
+        coolTime = 0;
+    }
 }

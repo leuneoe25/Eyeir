@@ -8,7 +8,7 @@ public class GameStart : MonoBehaviour
     public void Game_s()
     {
         Debug.Log("start");
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("StartEffect");
     }
     public void Game_e()
     {

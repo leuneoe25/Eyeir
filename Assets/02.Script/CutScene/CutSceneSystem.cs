@@ -65,6 +65,7 @@ public class CutSceneSystem : MonoBehaviour
     private int NowPage = 1;
     public int NewScript = 0;
     private bool ising = false;
+    private Coroutine nowTyping;
     void Start()
     {
         val.Req<CutSceneTable>(CutSceneTable.GetGoogleSheetGID(), m_mapTb,

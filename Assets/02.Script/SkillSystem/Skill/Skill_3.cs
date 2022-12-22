@@ -73,6 +73,11 @@ public class Skill_3 : Skill
         ps.isSkilling = false;
         ps.StopHook = false;
     }
+    public override void Clear()
+    {
+        level = 1;
+        coolTime = 0;
+    }
     void Update()
     {
         if(coolTime > 0)
