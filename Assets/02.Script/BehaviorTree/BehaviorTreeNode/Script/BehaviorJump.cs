@@ -23,7 +23,7 @@ public class BehaviorJump : BehaviorNode
             return false;
         if (ps.isGround)
         {
-            Debug.Log("JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ");
+
             rigidbody.AddForce(Vector2.up * ps.JumpPower, ForceMode2D.Impulse);
 
             ps.SetAnimator(PlayerState.StateAni.jump);

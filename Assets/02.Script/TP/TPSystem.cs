@@ -5,87 +5,47 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class TPSystem : MonoBehaviour
 {
-    #region Singleton
-    private static TPSystem instance = null;
-    void Awake()
-    {
-        if (null == instance)
-        {
-            instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
-    }
-    public static TPSystem Instance
-    {
-        get
-        {
-            if (null == instance)
-            {
-                return null;
-            }
-            return instance;
-        }
-    }
-    #endregion
-    private string nowScene;
-    private string PlayScene;
-    private Vector2 pos;
-    public GameObject Player;
-
-    Color color;
-
-    private bool state;
+    [SerializeField] private Image Pade;
+    private bool ising = false;
 
     private void Start()
     {
-        //SpriteRenderer renderer = GetComponent<SpriteRenderer>();
-        //color.a = 0;
-        //renderer.color = color;
-        ////state = false;
-        //nowScene = "";  //초기값
-        //PlayScene = SceneManager.GetActiveScene().name;
-        //Debug.Log("");
     }
 
-    IEnumerator CountAttackDelay()
+    IEnumerator PadeIn(GameObject Player, Vector2 Position)
     {
-        
-        while(gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color.a < 1)
+        ising = true;
+        Pade.gameObject.SetActive(true);
+        Pade.color = new Color(0, 0, 0, 0);
+
+        while (Pade.color.a < 1)
         {
-            Debug.Log("b");
-            gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color = color;
-            color += new Color(0, 0, 0, 0.1f);
+            Pade.color += new Color(0, 0, 0, 0.1f); ;
             yield return new WaitForSeconds(0.05f);
         }
-        
 
-
+        Player.transform.position = Position;
+        yield return new WaitForSeconds(0.1f);
+        StartCoroutine(PadeOut());
     }
-
-    private void Update()
+    IEnumerator PadeOut()
     {
-        if(SceneManager.GetActiveScene().name != PlayScene)    //플레이중인 씬과 초기씬이 다르다면
+        Pade.color = new Color(0, 0, 0, 1);
+
+        while (Pade.color.a > 0)
         {
-            Debug.Log("a");
-             
-
-            //gameObject.SetActive(true);
-            //state = true;
-            Instantiate(Player, pos, Quaternion.identity);//위치를 이동시킨다.
-            PlayScene = SceneManager.GetActiveScene().name;     //초기씬을 현재씬으로 덮는다.
+            Pade.color -= new Color(0, 0, 0, 0.1f); ;
+            yield return new WaitForSeconds(0.05f);
         }
+        Pade.gameObject.SetActive(false);
+        ising = false;
     }
-    public void TP(string tp2, Vector2 Position)
+
+    public void TP(GameObject Player, Vector2 Position)
     {
-        pos = Position;
-        StartCoroutine(CountAttackDelay());
-        SceneManager.LoadScene(tp2);        //씬 이동
-       // gameObject.SetActive(true);
-       // state = true;
+        if (ising)
+            return;
+        StartCoroutine(PadeIn(Player, Position));
        
     }
 

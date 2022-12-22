@@ -58,11 +58,6 @@ public class BehaviorMove : BehaviorNode
         //jump
         #region Jump
         RaycastHit2D hit;
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            ps.isJumping = true;
-            return false;
-        }
         hit = Physics2D.Raycast(Character.transform.position, Vector2.down, 1.5f, LayerMask.GetMask("Ground"));
         if (hit.collider != null)
         {
@@ -76,11 +71,15 @@ public class BehaviorMove : BehaviorNode
         {
             ps.isJumping = true;
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ps.isJumping = true;
+            return false;
+        }
         #endregion
         //move
         float x = Input.GetAxisRaw("Horizontal");
         TransformX(x, Character);
-
         if (ps.Rope)
             return false;
 
@@ -92,11 +91,11 @@ public class BehaviorMove : BehaviorNode
         {
             
             if (x != 0)
-                rigidbody.velocity = new Vector2(x * ps.Speed, rigidbody.velocity.y);
+                rigidbody.velocity = new Vector2(x * (ps.Speed + ItemManager.Instance.GetSpeed()), rigidbody.velocity.y);
         }
         else
         {
-            rigidbody.velocity = new Vector2(x * ps.Speed, rigidbody.velocity.y);
+            rigidbody.velocity = new Vector2(x * (ps.Speed+ItemManager.Instance.GetSpeed()), rigidbody.velocity.y);
         }
         
         //Ani

@@ -78,7 +78,7 @@ public class Store : MonoBehaviour
             g.SetActive(true);
             EventTrigger eventTrigger = g.AddComponent<EventTrigger>();
             //설명
-            //g.transform.GetChild(0).GetComponent<Image>().sprite = ItemManager.Instance.GetItemSprite(Product[i].GetName());
+            g.transform.GetChild(0).GetComponent<Image>().sprite = ItemManager.Instance.GetItemSprite(Product[i].GetName());
             if (purchased[i] != 0)
             {
                 //g.transform.GetChild(4).gameObject.SetActive(true);
@@ -150,6 +150,7 @@ public class Store : MonoBehaviour
     private void BuyProduct()
     {
         //재화 소모
+        GoodsSystem.Instance.AddCoin(-ItemManager.Instance.Getprice( Product[Select - 1].GetName()));
         Debug.Log("Buy " + Select);
         purchased[Select-1] = 1;
         ItemManager.Instance.AddItem(Product[Select-1].GetName());

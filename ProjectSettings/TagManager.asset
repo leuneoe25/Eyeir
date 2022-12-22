@@ -7,6 +7,9 @@ TagManager:
   - Wall
   - Ground
   - Spawn
+  - Skill
+  - Enemy
+  - Trap
   layers:
   - Default
   - TransparentFX
@@ -18,9 +21,9 @@ TagManager:
   - Wall
   - Ground
   - Spawn
-  - 
-  - 
-  - 
+  - Enemy
+  - Player
+  - saaaaa
   - 
   - 
   - 
@@ -46,4 +49,7 @@ TagManager:
     locked: 0
   - name: collision
     uniqueID: 4112691369
+    locked: 0
+  - name: Eye
+    uniqueID: 2480900713
     locked: 0

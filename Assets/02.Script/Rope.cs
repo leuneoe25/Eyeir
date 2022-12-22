@@ -71,7 +71,7 @@ public class Rope : MonoBehaviour
             }
             if (hitPlayerLookAt.collider != null)
             {
-                Debug.Log(wallx);
+                
                 Player.GetComponent<PlayerState>().StartWallWalk(wallx);
                 if (lineRenderer.positionCount > 0)
                     DeletRope();
@@ -173,7 +173,8 @@ public class Rope : MonoBehaviour
             }
         }
         else if(Input.GetMouseButton(0) && isRope)
-        {   
+        {
+            Player.GetComponent<PlayerState>().SetAnimator(PlayerState.StateAni.Wire);
             if (hit.collider == null)
                 return;
             if (Player.transform.position.y > hit.point.y)//앵커가 내 아래에 있을 시 작동 x
@@ -451,6 +452,7 @@ public class Rope : MonoBehaviour
         ropeSegments.Clear();
         Player.GetComponent<Rigidbody2D>().gravityScale = 5;
         Player.GetComponent<PlayerState>().Rope = false;
+        Player.GetComponent<PlayerState>().SetAnimator(PlayerState.StateAni.Idle);
     }
     private void GetPlayerVelocity()
     {

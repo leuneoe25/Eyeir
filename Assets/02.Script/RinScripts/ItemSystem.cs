@@ -42,6 +42,7 @@ public class ItemSystem
         public BrokenMirror(ItemManager.ItemName name)
         {
             this.name = name;
+            Count = 1;
         }
         public void AddCount()
         {
@@ -69,6 +70,7 @@ public class ItemSystem
         public Match(ItemManager.ItemName name)
         {
             this.name = name;
+            Count = 1;
         }
         public void AddCount()
         {
@@ -96,6 +98,7 @@ public class ItemSystem
         public Icicle(ItemManager.ItemName name)
         {
             this.name = name;
+            Count = 1;
         }
         public void AddCount()
         {
@@ -123,6 +126,7 @@ public class ItemSystem
         public Snowball(ItemManager.ItemName name)
         {
             this.name = name;
+            Count = 1;
         }
         public void AddCount()
         {
@@ -150,6 +154,7 @@ public class ItemSystem
         public Eyecrystal(ItemManager.ItemName name)
         {
             this.name = name;
+            Count = 1;
         }
         public void AddCount()
         {
@@ -177,6 +182,7 @@ public class ItemSystem
         public Wand(ItemManager.ItemName name)
         {
             this.name = name;
+            Count = 1;
         }
         public void AddCount()
         {
@@ -194,7 +200,7 @@ public class ItemSystem
 
         public void Ues()
         {
-            throw new System.NotImplementedException();
+            Count--;
         }
     }
     public class Holly : ItemManager.Item
@@ -204,6 +210,7 @@ public class ItemSystem
         public Holly(ItemManager.ItemName name)
         {
             this.name = name;
+            Count = 1;
         }
         public void AddCount()
         {
