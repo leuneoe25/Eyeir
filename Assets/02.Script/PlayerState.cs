@@ -92,6 +92,8 @@ public class PlayerState : MonoBehaviour
             impulseSource.GenerateImpulse(0.7f);
             if (NowHp==0)
             {
+                SkillCommand.Instance.SkillClear();
+                GoodsSystem.Instance.Clear();
               Debug.Log("DIE");
             }
             StartCoroutine(DamagePadeIn());
@@ -140,7 +142,8 @@ public class PlayerState : MonoBehaviour
         Slide,
         jump,
         Stab,
-        Cut
+        Cut,
+        Wire
 
     }
     private void OnTriggerEnter2D(Collider2D collision)

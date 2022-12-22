@@ -137,6 +137,7 @@ public class SkillCommand : MonoBehaviour
         switch(index)
         {
             case 0:
+                
                 skills.Add(0, s_1);
                 break;
             case 1:
@@ -214,5 +215,12 @@ public class SkillCommand : MonoBehaviour
         if (GetSkillContains(index))
             return m_mapTb[index + 1].ButPrice;
         return m_mapTb[index + 1].Buy;
+    }
+    public void SkillClear()
+    {
+        skills.Clear();
+        s_1.Clear();
+        s_2.Clear();
+        s_3.Clear();
     }
 }

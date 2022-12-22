@@ -81,4 +81,10 @@ public class Skill_2 : Skill
             coolTime = 0;
         }
     }
+
+    public override void Clear()
+    {
+        level = 1;
+        coolTime = 0;
+    }
 }

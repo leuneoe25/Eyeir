@@ -30,8 +30,11 @@ public class GoodsSystem : MonoBehaviour
         }
     }
     #endregion
-    private int Coin = 100;
-
+    private int Coin = 0;
+    public void Clear()
+    {
+        Coin = 0;
+    }
     public int GetCoin()
     {
         return Coin;
