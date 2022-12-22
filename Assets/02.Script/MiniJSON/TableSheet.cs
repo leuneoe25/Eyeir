@@ -60,7 +60,7 @@ public class TableSheet: MonoBehaviour
             for (int i = 0; i < liName.Count; ++i)
             {
                 var m1 = (Dictionary<string, object>)liName[i];
-                Debug.Log((string)m1["label"]);
+                
                 liValueName.Add((string)m1["label"]);
             }
 
@@ -75,7 +75,6 @@ public class TableSheet: MonoBehaviour
                 for (int j = 0; j < li.Count; ++j)
                 {
                     var v = (Dictionary<string, object>)li[j];
-                    
                     liValues[i].Add(v["v"].ToString());
                 }
             }
